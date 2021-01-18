@@ -1,0 +1,1171 @@
+/*
+Product Name : Drivill
+Version : 1.0
+*/
+/* Loading Fonts   */
+@font-face{
+font-family: helvetica;
+src: url(../fonts/Helvetica.ttf);
+}
+@font-face{
+font-family: "helveticaNue";
+src: url(../fonts/HelveticaNeue.ttf);
+}
+@font-face{
+    font-family: metropolish;
+    src: url(../fonts/Metropolis-Black.otf);
+}
+/* Default Styles 
+=====================================
+*/
+.helvetica-font{
+    font-family: helvetica;
+}
+.helveticaNue-font{
+    font-family: "helveticaNue",sans-serif;
+}
+.default-bg{
+    background:#2699FB;
+}
+.section-bg{
+    background-color: #F6F9FC;
+}
+.default-color{
+    color: #2699FB;
+}
+.section-padding{
+    padding: 50px;
+}
+.content-top-space{
+    margin-top: 40px;
+}
+body,html{
+    font-family:helveticaNue ;
+    letter-spacing: 0.2px;
+    scroll-behavior: smooth;
+}
+h2.section-title {
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 43px;
+    color: #2699FB;
+}
+p.section-sub-title,.bike-header-description p,.agent-feature-block p,.employee-quote>p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #7F7F7F;
+}
+/* Page Headers  */
+.about-header,.contact-header,.blog-header,.delivery-header,.tracker-header,.agent-header{
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
+}
+/* 
+===============================================
+Home Page Styles 
+================================================
+Styling Header 
+================================================
+*/
+header{
+    min-height: 650px;
+}
+.logo{
+    max-width: 120px;
+}
+.header-menu ul li{
+    padding: 0px 5px;
+}
+.header-menu ul li a,.testimonial-quote h4{
+    line-height: 28px;
+    font-size: 24px;
+    font-weight: 500;
+}
+.banner-image{
+    margin-top: 20px;
+}
+.banner h2 {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 80px;
+    letter-spacing: 0.976px;
+}
+.banner p {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 31px;
+    letter-spacing: 2px;
+}
+.banner h2, .banner p{
+    margin-bottom: 30px;
+}
+.header-call-to-action button {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 15px;
+    transition: all 0.5s;
+    margin-bottom: 10px;
+}
+.header-call-to-action button:hover{
+    background: #fff;
+    color: #2699FB;
+}
+
+/* Styling Feature section 
+================================
+*/
+section.feature {
+    box-shadow: 1px 3px 20px rgba(0,0,0,0.16);
+}
+.feature-icon {
+    width: 5%;
+    float: left;
+    padding: 5px 30px 0px 0px;
+}
+
+.feature-description {
+    width: 90%;
+    float: left;
+}
+.feature-description h3,.tab-forms>ul li a,.employee-quote-table h3 {
+    font-size: 24px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    line-height: 28px;
+    color: #2699FB;
+}
+
+.feature-description p, .earning-feature-description p, .joining-block p,.bike-tab-left p,.bike-tab-right p{
+    color: #7F7F7F;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.feature-icon i {
+    color: #2699FB;
+    font-size: 20px;
+}
+
+/* Styling Why Choose Block 
+======================================
+*/
+section.why-choose-drivill {
+    background: #F6F9FC;
+}
+.why-choose-block {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.why-choose-block img {
+    border: 1px solid #475677;
+    border-radius: 15px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.26);
+}
+
+.why-choose-block h3,.earn-block h3, .earning-feature-description h3,.agent-feature-block h4{
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 32px;
+    color: #2699FB;
+    padding:15px 0px;
+    text-transform:capitalize;
+}
+
+.why-choose-block p,.earn-block p,.timeline-container p, .delivery-map p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #7F7F7F;
+}
+
+/* Styling Service Section  */
+.scroller {
+    text-align:center;
+    cursor:pointer;
+    padding: 7px 15px;
+    white-space:no-wrap;
+    vertical-align:middle;
+    background-color:#2699FB;
+    color: #fff;
+  }
+  
+  .scroller-right{
+    float:right;
+  }
+  
+  .scroller-left {
+    float:left;
+  }
+  .scroll-pills {
+    overflow: hidden;
+}
+.scroll-pills ul{
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding: 0px 20px 35px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-pills ul li a.nav-link,.scroll-pills ul li a.active{
+    margin-right: 20px;
+    border: 1px solid #2699FB;
+    border-radius: 29px;
+    padding: 8px 20px;
+    display: flex;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+ul.list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  ul.list {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    transition: all 0.5s;
+  }
+.tab-bg{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 500px;
+}
+.bike-tab-bg{
+    background-image: url(../../images/tab-bg.png);
+}
+.car-tab-bg{
+    background-image: url(../../images/car.png);
+}
+.delivery-tab-bg{
+    background-image: url(../../images/delivery.png);
+}
+.agent-tab-bg{
+    background-image: url(../../images/agent.png);
+}
+.tracker-tab-bg{
+    background-image: url(../../images/tracking.png);
+}
+
+.bike-tab-left p{
+    max-width: 60%;
+    margin: 0 auto;
+}
+.bike-tab-right {
+    max-width: 60%;
+    margin: 0 auto;
+}
+.bike-tab-right ul li {
+    list-style: none;
+    display: inline-block;
+    border-right: 2px solid #707070;
+}
+
+.bike-tab-right ul li:last-child {
+    border: none;
+}
+
+.bike-tab-right ul li a {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #4F4F4F;
+    padding: 0px 15px;
+}
+
+
+/* Earn section styling 
+=======================================
+*/
+.earn-block{
+    margin-bottom: 20px;
+}
+.earn-block img {
+    border-radius: 15px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+}
+.earn-block a {
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px solid #2699FB;
+    padding: 5px 15px;
+    color: #2699FB;
+    border-radius: 5px;
+}
+.earn-block a i {
+    padding-left: 10px;
+}
+/* Blog Section Styling 
+==========================================
+*/
+
+section.blog {
+    background: #F6F9FC;
+}
+.categories a {
+    margin-right: 20px;
+    border: 1px solid #2699FB;
+    border-radius: 29px;
+    padding: 5px 15px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #2699FB;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.categories a i {
+    padding: 0px 5px;
+}
+
+.categories a:hover {
+    color: #fff;
+    background: #2699FB;
+    transition: all 0.5s;
+}
+.blog-block {
+    padding: 0px 15px;
+}
+.blog-block img {
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+}
+
+.blog-block h3,.single-post-content h3 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 36px;
+    color: #2699FB;
+    padding: 10px 5px;
+    letter-spacing: 2px;
+}
+
+.blog-block .blog-meta-data span, .single-post-meta span,.testimonial-quote p.clients-designation {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18px;
+    font-weight: 300;
+    line-height: 18px;
+    color: #7F7F7F;;
+}
+.blog-block .blog-meta-data span:nth-child(2){
+    float: right;
+}
+.blog-block p.blog-content {
+    font-size: 18px;
+    line-height: 34px;
+    color: #7F7F7F;
+}
+
+.blog-block a.read-more {
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    float: right;
+    padding-right: 30px;
+}
+/* Testimonial Secton  */
+button.btn-customized,button.btn-customized-2 {
+    border: none;
+    background: transparent;
+    color: #2699FB;
+    font-size: 100px;
+}
+h4.clients-name {
+    text-transform: capitalize;
+}
+.testimonial-block {
+    margin-bottom: 50px;
+}
+
+.testimonial-block img {
+    border: 5px solid #2699FB;
+    border-radius: 50%;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+    margin-right: 15px;
+    max-width: 30%;
+}
+
+.testimonial-quote h4 {
+    color: #2699FB;
+}
+
+p.clients-feedback {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #7F7F7F;
+}
+/* Styling Footer Section 
+=======================================
+*/
+h3.footer-title {
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    color: #fff;
+    position: relative;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+
+h3.footer-title:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #707070;
+    bottom: 0;
+    }
+.footer-1 p {
+    font-family: "metropolish";
+    font-weight: 300;
+    color: #C9D2D8;
+    padding-bottom: 20px;
+}
+
+.footer-1 ul li {
+    list-style: none;
+    display: inline;
+}
+
+.footer-1 ul li a {
+    color: #fff;
+    background: #6A6975;
+    padding: 10px 10px;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+}
+.footer-1 ul li a:hover{
+    color: #2699FB;
+    background: #fff;
+}
+
+/* Footer 2 */
+
+.footer-2 ul li,.footer-3 ul li {
+    list-style: none;
+    padding: 5px 0px;
+}
+
+.footer-2 ul li a,.footer-3 ul li a {
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 1px;
+    color: #C9D2D8;
+    text-transform: capitalize;
+}
+form#footer-newsletter input {
+    border-radius: 8px;
+    background: #C9D2D8;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    width: 95%;
+}
+
+form#footer-newsletter i.fa-envelope {
+    color: #4E4D5A;
+    font-size: 20px;
+    margin-left: -50px;
+}
+.footer-4 address {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    color: #C9D2D8;
+}
+/* 
+======================================
+Single Post Page Styling
+=======================================
+*/
+
+.single-post{
+    background: #F6F9FC;
+}
+.single-feature-image img {
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.single-post-meta span:nth-child(2){
+    margin-left: 100px;
+}
+.single-post-body ,.employee-modal-list ul li{
+    padding-top: 20px;
+    font-size: 20px;
+    color: #7F7F7F;
+    font-weight: 300;
+}
+.sidebar-post {
+    height: 168px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 3px 25px rgba(0,0,0,0.16);
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 10px;
+}
+.signle-post-sidebar{
+    overflow: scroll;
+    height: 100%;
+}
+.sidebar-post img{
+    max-width: 20%;
+    height: 100%;
+}
+.sidebar-post .sidebar-post-content {
+    max-width: 70%;
+}
+.sidebar-post h4 {
+    font-size: 16px;
+    color: #2699FB;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.sidebar-post-content {
+    padding-left: 20px;
+}
+
+.sidebar-post-content p,.employee-quote-table td {
+    font-size: 16px;
+    font-weight: 300;
+    color: #7F7F7F;
+    line-height: 26px;
+}
+/* Other */
+.download-app{
+    position: relative;
+}
+.rectangle-26{
+    position: absolute;
+    top: 0;
+    left: 1800%;
+    max-height: 700px;
+}
+/* Multiframe Carousel  */
+.owl-carousel .owl-prev{
+    position: absolute;
+    left: -5%;
+    top: 50%;
+    height: 32px;
+    width: 32px;
+    background: #2699FB !important;
+    color: #fff !important;
+}
+.owl-carousel .owl-next{
+    position: absolute;
+    right: -5%;
+    top: 50%;
+    height: 32px;
+    width: 32px;
+    background: #2699FB !important;
+    color: #fff !important;
+}
+/*
+Blog Styling
+==================================================
+*/
+.blog-header{
+    background-image: url("../../images/blog-header.png");
+    min-height: 500px;
+}
+
+/*
+============================================
+Styling Contact Us Page 
+============================================
+*/
+.contact-header{
+    min-height: 500px;
+    background-image: url(../../images/contact-header.png);
+}
+.support{
+    background-color: #F6F9FC;
+}
+.support-type ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+}
+
+.support-type ul li a {
+    font-size: 20px;
+    color: #fff;
+    background: #2699FB;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+}
+
+.support-type ul li a:hover {
+    background: #fff;
+    color: #2699FB;
+    transition: all 0.5s;
+}
+
+.support-type {
+    margin-top: 30px;
+}
+.office-address {
+    margin-bottom: 30px;
+}
+h3.address-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2699FB;
+    letter-spacing: 2px;
+    line-height: 32px;
+}
+
+.office-address p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.office-address ul li {
+    list-style: none;
+    margin-bottom: 10px;
+    color: #7F7F7F;
+}
+
+.office-address ul li a {
+    color: #7F7F7F;
+}
+
+.office-address ul {
+    padding-left: 0px;
+}
+.map,.map iframe{
+    height: 100%;
+    width: 100%;
+}
+.contact-form{
+    background-color: #fff;
+    padding: 30px 25px;
+    box-shadow: 0px 3px 20px rgba(0,0,0,0.1);
+}
+.contact-form h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 32px;
+    color: #2699FB;
+}
+.purpose {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.contact-form .purpose ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.contact-form .purpose ul li a {
+    font-size: 25px;
+    font-weight: 500;
+    border: 1px solid #2699FB;
+    border-radius: 30px;
+    padding: 10px 15px;
+}
+
+.contact-form .purpose ul li:first-child a {
+    border: none;
+}
+.contact-form .purpose ul li a:hover {
+    background: #2699FB;
+    color: #fff;
+     text-decoration: none;
+    transition: all 0.5s;
+}
+
+.form-group-1 {
+    width: 100%;
+    min-height: 100px;
+}
+form#contact {
+    margin: 0 auto;
+}
+form#contact label {
+    font-size: 16px;
+    line-height: 18px;
+    color: #2699FB;
+}
+form#contact input{
+    border:none;
+    box-shadow:0px 3px 6px rgba(0,0,0,0.16);
+    border-radius: 4px;
+    padding: 18px 15px;
+}
+.quater-width {
+    width: 33%;
+    float: left;
+}
+
+.quater-width label {
+    display: block;
+}
+.quater-width input{
+    width: 90%;
+    background:#fff;
+    
+}
+
+input#message {
+    height: 200px;
+}
+form#contact button {
+    border: none;
+    color: #fff;
+    background: #2699FB;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23px;
+    min-height: 58px;
+    width: 100px;
+}
+
+/*==================================
+ Styling About Page 
+====================================
+ */
+ .about-header{
+     background-image: url(../../images/about-header.png);
+     min-height: 500px;
+ }
+ #employeeModal li{
+     list-style: none;
+ }
+ /* What is drivil section 
+ ===================================== */
+ section.drivill-info p.company-description , .office-description p{
+    font-size: 20px;
+    color: #7F7F7F;
+    line-height: 38px;
+    font-weight: 300;
+}
+.office-description {
+    padding: 20px 5px;
+}
+.office-description p{
+    line-height: 32px;
+}
+.office-descrioption-image img {
+    height: 100%;
+}
+
+/* Styling Partner Section  */
+.partner-logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Styling Album Section  */
+.gallery-item video {
+    max-width: 100%;
+    height: 330px;
+}
+
+/* Styling Team Section  */
+
+.team-block img {
+    border-radius: 50%;
+    border: 5px solid #2699FB;
+}
+.team-block h4 {
+    font-size: 27px;
+    font-weight: 500;
+    color: #2699FB;
+    line-height: 31px;
+    padding-top: 15px;
+}
+
+.team-block p {
+    font-size: 18px;
+    color: #7F7F7F;
+    font-weight: 300;
+    line-height: 21px;
+}
+.team-block {
+    margin-bottom: 50px;
+    margin-right: 30px;
+}
+
+/*==================================================== 
+Delivery Page Styles 
+======================================================= */
+.delivery-header{
+    background-image: url(../../images/deliver-header.png);
+}
+.tab-forms {
+    background: #fff;
+    padding: 0px 0px 20px 0px;
+    box-shadow: 0px 3px 20px rgba(0,0,0,0.16);
+}
+
+.tab-forms .nav-pills .nav-link {
+    border-radius: 0px;
+}
+.tab-forms form {
+    margin-top: 30px;
+}
+.tab-forms>ul li {
+    width: 50%;
+    text-align: center;
+}
+#tab-login button, #tab-register button{
+    border: none;
+    padding: 8px 25px;
+    margin-right: 20px;
+}
+li.register-pill,#tab-login button, #tab-register button {
+    background: #2699FB;
+    list-style: none;
+    max-width: 200px;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.register-pill a,#tab-login button, #tab-register button {
+    color: #fff;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 1px;
+}
+.tab-forms {
+    background: #fff;
+    padding: 0px 0px 20px 0px;
+    box-shadow: 0px 3px 20px rgba(0,0,0,0.16);
+}
+table.fare-table,table.fare-table td {
+    border: 2px solid #707070;
+}
+table.fare-table caption {
+    caption-side: top;
+    text-align: center;
+}
+table.fare-table caption {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 1px;
+    color: #fff;
+    background: #2699FB;
+}
+table.fare-table thead {
+    background: #000;
+}
+
+table.fare-table td {
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #212425;
+}
+
+table.fare-table th {
+    line-height: 31px;
+    color: #FAFDFF;
+}
+
+.earning-feature-description {
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+.joining-block {
+    margin-bottom: 30px;
+}
+.joining-block h4 {
+    font-size: 20px;
+    line-height: 23px;
+    color: #2699FB;
+    position: relative;
+}
+.joining-block h4::before {
+    content: "✔";
+    font-weight: 900;
+    position: absolute;
+    left: -18px;
+}
+/* FAQ  */
+.single-question {
+    background: #fff;
+    box-shadow: 0px 3px 20px rgba(0,0,0,0.16);
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.card.single-question .card-header {
+    background: #fff;
+    border-bottom: none;
+}
+div#accordion .card-header h3 a {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #2699FB;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+div#accordion .card-header h3 a span {
+    float: right;
+}
+.rotate90{
+    transform: rotate(90deg);
+    transition: transform 0.3s ease-in-out;
+}
+p.answer {
+    padding: 0px 30px;
+    margin-left: 10px;
+}
+
+/*================================================== 
+Bike Page Styling 
+==================================================== */
+.bike-header{
+    min-height: 100px;
+}
+section.bike-banner {
+    min-height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../images/bike-header.png);
+}
+.bike-header-description h2 {
+    font-size: 38px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 43px;
+}
+.bike-header-description p{
+    padding: 25px 0px;
+}
+.bike-header-description a {
+    text-decoration: none;
+    color: #fff;
+    background: #2699FB;
+    padding: 15px 35px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26px;
+}
+.earning-form-tab ul li {
+    margin-right: 20px;
+}
+
+.earning-form-tab ul li a.nav-link {
+    border-radius: 29px;
+    border: 1px solid #2699FE;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    transition: all 0.5s;
+    margin-bottom: 20px;
+}
+
+.earning-form-tab ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.earning-form-tab ul li a.nav-link:hover {
+    background: #2699FB;
+    color: #fff;
+}
+form#tab-bike,form#tab-car {
+    box-shadow: 0px 3px 20px rgba(0,0,0,0.16);
+    padding-bottom: 30px;
+}
+form#tab-bike .form-group,form#tab-car .form-group {
+    padding: 0px 20px;
+}
+form#tab-bike h2,h2.map-title,.form-title {
+    text-align: center;
+    background: #2699FB;
+    color: #fff;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 500;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+}
+p.form-group-title {
+    font-size: 16px;
+    line-height: 18px;
+    color: #2699FB;
+}
+.upload-box {
+    background: #F5F6FA;
+    margin-right: 20px;
+    border-radius: 6px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+    padding: 20px 5px;
+}
+.drop-upload {
+    margin-bottom: 20px;
+}
+.half-width input{
+    width: 90%;
+}
+form#tab-car select{
+    width: 100%;
+    padding: 4px 0px;
+}
+/* Career Page Styling  */
+
+header.career-header{
+    max-height: 600px;
+    overflow: hidden;
+}
+video#header-bg-video {
+    min-width: 100%;
+}
+section.why-join .why-choose-block img{
+    box-shadow:0px 3px 6px rgba(0,0,0,0.16);
+    border-radius:0px;
+    padding:15px 20px;
+    border:none;
+}
+.employee-quote-table tbody tr:nth-of-type(even){
+    background-color: #F6F9FC;
+}
+.table-btn, .map-back a{
+    color: #fff;
+    background: #2699FB;
+    border-radius: 0px;
+    padding: 5px 15px;
+}
+.table-btn i{
+    padding-left: 5px;
+}
+#employee-carousel .carousel-item::before{
+    box-shadow: 0 3px 25px rgba(0, 0, 0, 0.16);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+}
+#employee-carousel a.carousel-control-prev span.fas.fa-angle-left,#employee-carousel a.carousel-control-next span.fas.fa-angle-right{
+    font-size: 30px;
+    color: white;
+    background: #2699FB;
+    padding: 10px;  
+}
+#employee-carousel a.carousel-control-prev span.fas.fa-angle-left{
+    margin-left: -169px;
+}
+#employee-carousel a.carousel-control-next span.fas.fa-angle-right{
+    margin-right: -169px;
+}
+/* font-size: 30px;
+color: white;
+background: #2699FB;
+padding: 10px;
+    margin-right: -170px; */
+/*==============================================================
+ Earn With Bike 1 Page Styles  
+ ===============================================================*/
+
+.bike-banner-1{
+    background-image: url(../../images/bike-1-header.png)!important;
+}
+
+/*==================================================================
+ Tracker Page Styling  
+ ===================================================================*/
+
+.tracker-header{
+    background-image: url(../../images/tracker-header.png);
+}
+
+/*====================================================================
+Agent Page Styles 
+======================================================================= */
+.agent-header{
+    background-image: url(../../images/agent-header.png);
+}
+section.agent-feature {
+    margin-top: -10%;
+}
+.agent-feature-block {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 3px 25px rgba(0,0,0,0.16);
+    padding: 20px 10px;
+}
+
+/* Map Page  */
+
+.delivery-timeline {
+    position: relative;
+}
+.delivery-timeline::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: #2699FB;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin-left: -3px;
+}
+
+
+.timeline-container {
+    position: relative;
+    padding: 0px 0px 20px 35px;
+}
+
+.timeline-container:before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: -14px;
+    background-color: white;
+    border: 4px solid #2699FB;
+    top: 0;
+    border-radius: 50%;
+    z-index: 1;
+}
+.timeline-container:last-child{
+    padding-bottom: 0px;
+}
+.timeline-container p{
+    font-weight: 400;
+}
+.timeline-container:last-child p{
+    margin: 0px;
+}
+.delivery-map {
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0px 3px 25px rgba(0,0,0,0.16);
+}
