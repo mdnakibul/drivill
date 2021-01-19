@@ -82,8 +82,40 @@ header{
 }
 .header-menu ul li a,.testimonial-quote h4{
     line-height: 28px;
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+.header-menu ul li a:hover{
+    color: #2699FB !important;
+    transition: all 0.5s;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+.dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+}
+.dropdown-menu a{
+    color: #fff;
+}
+.dropdown-menu a:hover{
+    color: #2699FB;
+    background: #343a40;
+}
+.fadeAnimation{
+    animation-name: fadeAnimation;
+    animation-duration: 0.5s;
+}
+@keyframes fadeAnimation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .banner-image{
     margin-top: 20px;
@@ -113,17 +145,21 @@ header{
     padding: 5px 15px;
     transition: all 0.5s;
     margin-bottom: 10px;
+    border-radius: 5px;
 }
 .header-call-to-action button:hover{
     background: #fff;
     color: #2699FB;
 }
-
+.header-call-to-action button:hover i {
+    margin-left: 5px;
+    transition: all 0.4s;
+}
 /* Styling Feature section 
 ================================
 */
 section.feature {
-    box-shadow: 1px 3px 20px rgba(0,0,0,0.16);
+    box-shadow: -4px 14px 11px -3px #C4C4C4;
 }
 .feature-icon {
     width: 5%;
@@ -295,6 +331,7 @@ ul.list::-webkit-scrollbar {
 .earn-block img {
     border-radius: 15px;
     box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+    width: 100%;
 }
 .earn-block a {
     text-transform: capitalize;
@@ -307,6 +344,16 @@ ul.list::-webkit-scrollbar {
 }
 .earn-block a i {
     padding-left: 10px;
+}
+.earn-block a:hover {
+    background: #2699FB;
+    color: #fff;
+    text-decoration: none;
+}
+
+.earn-block a:hover i,.blog-block a.read-more:hover i {
+    transform: translateX(5px);
+    transition: all 0.4s;
 }
 /* Blog Section Styling 
 ==========================================
@@ -339,6 +386,10 @@ section.blog {
 }
 .blog-block {
     padding: 0px 15px;
+    box-shadow: 0px 3px 25px rgba(0,0,0,0.16);
+    border-radius: 5px;
+    background: #fff;
+    padding-bottom: 50px;
 }
 .blog-block img {
     border-radius: 8px;
@@ -410,6 +461,17 @@ p.clients-feedback {
     font-weight: 300;
     line-height: 30px;
     color: #7F7F7F;
+}
+.app-feature-block i {
+    font-size: 40px;
+    display: block;
+    text-align: center;
+    padding-bottom: 15px;
+    color: #2699FB;
+}
+.app-feature-block h3 {
+    color: #2699FB;
+    font-weight: bold;
 }
 /* Styling Footer Section 
 =======================================
@@ -550,14 +612,11 @@ Single Post Page Styling
     line-height: 26px;
 }
 /* Other */
-.download-app{
-    position: relative;
-}
-.rectangle-26{
+img.blank-phone {
     position: absolute;
+    right: 0;
     top: 0;
-    left: 1800%;
-    max-height: 700px;
+    max-height: 581px;
 }
 /* Multiframe Carousel  */
 .owl-carousel .owl-prev{
