@@ -592,6 +592,15 @@ form#footer-newsletter i.fa-envelope {
     letter-spacing: 1px;
     color: #C9D2D8;
 }
+footer{
+    padding: 10px;
+    background: #fff;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.36px;
+    color: #212425;
+}
 /* 
 ======================================
 Single Post Page Styling
