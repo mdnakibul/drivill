@@ -2,7 +2,7 @@
 $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
       loop:true,
-      margin:10,
+      margin:15,
       nav:true,
       navText:["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
       responsiveClass:true,
@@ -53,3 +53,9 @@ $('.btn-customized').on('click', function(){
     }
  
 });
+// Single post page sidebar height fixing
+var singlePostImage = document.querySelector(".single-feature-image").clientHeight;
+var singlePostContent = document.querySelector(".single-post-content").clientHeight
+var x = document.querySelector(".signle-post-sidebar ");
+x.style.height = "500px";
+console.log(singlePostImage)

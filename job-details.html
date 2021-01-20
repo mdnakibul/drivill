@@ -1,157 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Details</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha512-3M00D/rn8n+2ZVXBO9Hib0GKNpkm8MSUU/e2VNthDyBYxKWG+BftNYYcuEjXlyrSO637tidzMBXfE7sQm0INUg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css"
+        integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css"
+        integrity="sha512-3M00D/rn8n+2ZVXBO9Hib0GKNpkm8MSUU/e2VNthDyBYxKWG+BftNYYcuEjXlyrSO637tidzMBXfE7sQm0INUg=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
-<body>
-        <!-- Navbar Start  -->
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark header-menu">
-            <div class="container">
-                <!-- Brand/logo -->
-                <a class="navbar-brand" href="#"><img src="./images/LOGO (1).png" alt="" class="logo"></a>
-                <!-- Toggler/collapsibe Button -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- Links -->
-                <div class="collapse navbar-collapse " id="collapsibleNavbar">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link text-white text-capitalize helvetica-font" href="./index.html">home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white text-capitalize helvetica-font"
-                                id="navbar-drop" href="#" data-toggle="dropdown">service</a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Link 1</a>
-                                <a class="dropdown-item" href="#">Link 2</a>
-                                <a class="dropdown-item" href="#">Link 3</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white text-capitalize helvetica-font"
-                                id="navbar-drop-2" href="#" data-toggle="dropdown">Earn with us</a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="./earn-with-bike.html">Earn With Bike</a>
-                                <a class="dropdown-item" href="./earn-with-bike-1.html">Earn With Bike-1</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white text-capitalize helvetica-font"
-                                href="./blog-home.html">blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white text-capitalize helvetica-font"
-                                href="./location-tracking.html">delivery tracing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white text-capitalize helvetica-font" href="./contact.html">contact
-                                us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white text-capitalize helvetica-font" href="./about.html">about
-                                us</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white helvetica-font" href="#" id="navbar-drop-3"
-                                data-toggle="dropdown"><i class="fas fa-globe"></i> ENG </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Bangla</a>
-                                <a class="dropdown-item" href="#">Hindi</a>
-                                <a class="dropdown-item" href="#">Spanish</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Navbar End  -->
-        <!-- Job Title Start  -->
-        <section class="section-bg section-padding job-title">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="section-title">UI/UX Designer</h2>
-                        <p class="section-subtitle">IT Department</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Job Title End  -->
 
-        <section class="section-padding job-details">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies leo integer malesuada. Ac odio tempor orci dapibus ultrices in. Egestas diam in arcu cursus euismod. Dictum fusce ut placerat orci nulla. Tincidunt ornare massa eget egestas purus viverra accumsan in nisl. Tempor id eu nisl nunc mi ipsum faucibus. Fusce id velit ut tortor pretium. Massa ultricies mi quis hendrerit dolor magna eget. Nullam eget felis eget nunc lobortis. Faucibus ornare suspendisse sed nisi.
-                        </p>
-                        <p>
-                            Ut morbi tincidunt augue interdum. Sem fringilla ut morbi tincidunt augue. Morbi enim nunc faucibus a pellentesque sit amet porttitor eget. In est ante in nibh mauris. Nam aliquam sem et tortor consequat id porta nibh. Diam quis enim lobortis scelerisque fermentum dui faucibus. Non curabitur gravida arcu ac. Magna fringilla urna porttitor rhoncus dolor. Aenean et tortor at risus viverra adipiscing. Dignissim sodales ut eu sem.
-                        </p>
-                    </div>
+<body>
+    <!-- Navbar Start  -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top header-menu">
+        <div class="container">
+            <!-- Brand/logo -->
+            <a class="navbar-brand" href="#"><img src="./images/LOGO (1).png" alt="" class="logo"></a>
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Links -->
+            <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white text-capitalize" href="./index.html">home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white text-capitalize" id="navbar-drop" href="#"
+                            data-toggle="dropdown" data-hover="dropdown">service</a>
+                        <div class="dropdown-menu bg-dark fadeAnimation" aria-labelledby="navbar-drop">
+                            <a class="dropdown-item" href="./bike.html">Bike</a>
+                            <a class="dropdown-item" href="#"> Car</a>
+                            <a class="dropdown-item" href="./delivery.html">Delivery</a>
+                            <a class="dropdown-item" href="./agent.html">Agent</a>
+                            <a class="dropdown-item" href="./tracker.html">Tracker</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white text-capitalize " id="navbar-drop-2" href="#"
+                            data-toggle="dropdown">Earn with us</a>
+                        <div class="dropdown-menu bg-dark fadeAnimation">
+                            <a class="dropdown-item" href="./earn-with-bike.html">Earn With Bike</a>
+                            <a class="dropdown-item" href="./earn-with-bike-1.html">Earn With Car</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white text-capitalize " href="./blog-home.html">blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white text-capitalize " href="./location-tracking.html">delivery
+                            tracing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white text-capitalize " href="./contact.html">contact
+                            us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white text-capitalize " href="./about.html">about
+                            us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white " href="#" id="navbar-drop-3"
+                            data-toggle="dropdown"><i class="fas fa-globe"></i> ENG </a>
+                        <div class="dropdown-menu bg-dark fadeAnimation">
+                            <a class="dropdown-item" href="#">Bangla</a>
+                            <a class="dropdown-item" href="#">Hindi</a>
+                            <a class="dropdown-item" href="#">Spanish</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End  -->
+    <!-- Job Title Start  -->
+    <section class="section-bg section-padding job-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-title">UI/UX Designer</h2>
+                    <p class="section-subtitle">IT Department</p>
                 </div>
-                <div class="row content-top-space">
-                    <div class="job-description">
-                        <h3>Job Descriptions</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies leo integer malesuada. Ac odio tempor orci dapibus ultrices in. 
-                        </p>
-                        <ul>
-                            <li>#  Egestas diam in arcu cursus euismod.</li>
-                            <li>#  Dictum fusce ut placerat orci nulla.</li>
-                            <li>#  Tincidunt ornare massa eget egestas </li>
-                            <li>#  purus viverra accumsan in nisl</li>
-                            <li>#  Tempor id eu nisl nunc mi ipsum faucibus</li>
-                            <li>#  Fusce id velit ut tortor pretium.</li>
-                            <li>#  Massa ultricies mi quis hendrerit dolor magna eget.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row content-top-space">
-                    <div class="job-facilities">
-                        <h3>Facilities</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies leo integer malesuada. Ac odio tempor orci dapibus ultrices in. 
-                        </p>
-                        <ul>
-                            <li>#  Egestas diam in arcu cursus euismod.</li>
-                            <li>#  Dictum fusce ut placerat orci nulla.</li>
-                            <li>#  Tincidunt ornare massa eget egestas </li>
-                            <li>#  purus viverra accumsan in nisl</li>
-                            <li>#  Tempor id eu nisl nunc mi ipsum faucibus</li>
-                            <li>#  Fusce id velit ut tortor pretium.</li>
-                            <li>#  Massa ultricies mi quis hendrerit dolor magna eget.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row content-top-space">
+            </div>
+        </div>
+    </section>
+    <!-- Job Title End  -->
+
+    <section class="section-padding job-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
                     <p>
-                        Ut morbi tincidunt augue interdum. Sem fringilla ut morbi tincidunt augue. Morbi enim nunc faucibus a pellentesque sit amet porttitor eget. In est ante in nibh mauris. Nam aliquam sem et tortor consequat id porta nibh. Diam quis enim lobortis scelerisque fermentum dui faucibus. Non curabitur gravida arcu ac. Magna fringilla urna porttitor rhoncus dolor. Aenean et tortor at risus viverra adipiscing. Dignissim sodales ut eu sem.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat
+                        lacus laoreet. Mauris vitae ultricies leo integer malesuada. Ac odio tempor orci dapibus
+                        ultrices in. Egestas diam in arcu cursus euismod. Dictum fusce ut placerat orci nulla. Tincidunt
+                        ornare massa eget egestas purus viverra accumsan in nisl. Tempor id eu nisl nunc mi ipsum
+                        faucibus. Fusce id velit ut tortor pretium. Massa ultricies mi quis hendrerit dolor magna eget.
+                        Nullam eget felis eget nunc lobortis. Faucibus ornare suspendisse sed nisi.
+                    </p>
+                    <p>
+                        Ut morbi tincidunt augue interdum. Sem fringilla ut morbi tincidunt augue. Morbi enim nunc
+                        faucibus a pellentesque sit amet porttitor eget. In est ante in nibh mauris. Nam aliquam sem et
+                        tortor consequat id porta nibh. Diam quis enim lobortis scelerisque fermentum dui faucibus. Non
+                        curabitur gravida arcu ac. Magna fringilla urna porttitor rhoncus dolor. Aenean et tortor at
+                        risus viverra adipiscing. Dignissim sodales ut eu sem.
                     </p>
                 </div>
             </div>
-        </section>
-        <!-- Job Details End  -->
-
-        <!-- Apply Button Section  -->
-        <section class="section-bg section-padding apply-btn">
-            <div class="container">
-                <div class="row">
-                    <a href="#" class="btn btn-primary">Apply Button</a>
+            <div class="row content-top-space">
+                <div class="job-description">
+                    <h3>Job Descriptions</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat
+                        lacus laoreet. Mauris vitae ultricies leo integer malesuada. Ac odio tempor orci dapibus
+                        ultrices in.
+                    </p>
+                    <ul>
+                        <li># Egestas diam in arcu cursus euismod.</li>
+                        <li># Dictum fusce ut placerat orci nulla.</li>
+                        <li># Tincidunt ornare massa eget egestas </li>
+                        <li># purus viverra accumsan in nisl</li>
+                        <li># Tempor id eu nisl nunc mi ipsum faucibus</li>
+                        <li># Fusce id velit ut tortor pretium.</li>
+                        <li># Massa ultricies mi quis hendrerit dolor magna eget.</li>
+                    </ul>
                 </div>
             </div>
-        </section>
+            <div class="row content-top-space">
+                <div class="job-facilities">
+                    <h3>Facilities</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat
+                        lacus laoreet. Mauris vitae ultricies leo integer malesuada. Ac odio tempor orci dapibus
+                        ultrices in.
+                    </p>
+                    <ul>
+                        <li># Egestas diam in arcu cursus euismod.</li>
+                        <li># Dictum fusce ut placerat orci nulla.</li>
+                        <li># Tincidunt ornare massa eget egestas </li>
+                        <li># purus viverra accumsan in nisl</li>
+                        <li># Tempor id eu nisl nunc mi ipsum faucibus</li>
+                        <li># Fusce id velit ut tortor pretium.</li>
+                        <li># Massa ultricies mi quis hendrerit dolor magna eget.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row content-top-space">
+                <p>
+                    Ut morbi tincidunt augue interdum. Sem fringilla ut morbi tincidunt augue. Morbi enim nunc faucibus
+                    a pellentesque sit amet porttitor eget. In est ante in nibh mauris. Nam aliquam sem et tortor
+                    consequat id porta nibh. Diam quis enim lobortis scelerisque fermentum dui faucibus. Non curabitur
+                    gravida arcu ac. Magna fringilla urna porttitor rhoncus dolor. Aenean et tortor at risus viverra
+                    adipiscing. Dignissim sodales ut eu sem.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Job Details End  -->
 
-        <!-- Footer Star  -->
+    <!-- Apply Button Section  -->
+    <section class="section-bg section-padding apply-btn">
+        <div class="container">
+            <div class="row">
+                <a href="#" class="btn btn-primary">Apply Button</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Star  -->
     <section class="section-padding bg-dark footer">
         <div class="container">
             <div class="row">
@@ -159,7 +191,9 @@
                     <div class="footer-1">
                         <img src="./images/LOGO (1).png" alt="" class="logo">
                         <p>
-                            Drivill is A New Generation Transportation Network Company. Lowest fare & Fastest Reliable Five Star Service Our First Priority.We started our business from New YorkUSA in 2019. Now we moving forward to Bangladesh, Nepal, India, UAE & Mexico.
+                            Drivill is A New Generation Transportation Network Company. Lowest fare & Fastest Reliable
+                            Five Star Service Our First Priority.We started our business from New YorkUSA in 2019. Now
+                            we moving forward to Bangladesh, Nepal, India, UAE & Mexico.
                         </p>
                         <ul>
                             <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
@@ -221,4 +255,5 @@
     </section>
     <!-- Footer End  -->
 </body>
+
 </html>

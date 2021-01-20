@@ -28,7 +28,7 @@
 <body>
     <header class="about-header">
         <!-- Navbar Start  -->
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark header-menu">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top header-menu">
             <div class="container">
                 <!-- Brand/logo -->
                 <a class="navbar-brand" href="#"><img src="./images/LOGO (1).png" alt="" class="logo"></a>
@@ -40,45 +40,46 @@
                 <div class="collapse navbar-collapse " id="collapsibleNavbar">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-white text-capitalize helvetica-font" href="./index.html">home</a>
+                            <a class="nav-link text-white text-capitalize" href="./index.html">home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white text-capitalize helvetica-font"
-                                id="navbar-drop" href="#" data-toggle="dropdown">service</a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Link 1</a>
-                                <a class="dropdown-item" href="#">Link 2</a>
-                                <a class="dropdown-item" href="#">Link 3</a>
+                            <a class="nav-link dropdown-toggle text-white text-capitalize" id="navbar-drop" href="#"
+                                data-toggle="dropdown" data-hover="dropdown">service</a>
+                            <div class="dropdown-menu bg-dark fadeAnimation" aria-labelledby="navbar-drop">
+                                <a class="dropdown-item" href="./bike.html">Bike</a>
+                                <a class="dropdown-item" href="#"> Car</a>
+                                <a class="dropdown-item" href="./delivery.html">Delivery</a>
+                                <a class="dropdown-item" href="./agent.html">Agent</a>
+                                <a class="dropdown-item" href="./tracker.html">Tracker</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white text-capitalize helvetica-font"
-                                id="navbar-drop-2" href="#" data-toggle="dropdown">Earn with us</a>
-                            <div class="dropdown-menu">
+                            <a class="nav-link dropdown-toggle text-white text-capitalize " id="navbar-drop-2" href="#"
+                                data-toggle="dropdown">Earn with us</a>
+                            <div class="dropdown-menu bg-dark fadeAnimation">
                                 <a class="dropdown-item" href="./earn-with-bike.html">Earn With Bike</a>
-                                <a class="dropdown-item" href="./earn-with-bike-1.html">Earn With Bike-1</a>
+                                <a class="dropdown-item" href="./earn-with-bike-1.html">Earn With Car</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white text-capitalize helvetica-font"
-                                href="./blog-home.html">blog</a>
+                            <a class="nav-link text-white text-capitalize " href="./blog-home.html">blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white text-capitalize helvetica-font"
-                                href="./location-tracking.html">delivery tracing</a>
+                            <a class="nav-link text-white text-capitalize " href="./location-tracking.html">delivery
+                                tracing</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white text-capitalize helvetica-font" href="./contact.html">contact
+                            <a class="nav-link text-white text-capitalize " href="./contact.html">contact
                                 us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white text-capitalize helvetica-font" href="./about.html">about
+                            <a class="nav-link text-white text-capitalize " href="./about.html">about
                                 us</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white helvetica-font" href="#" id="navbar-drop-3"
+                            <a class="nav-link dropdown-toggle text-white " href="#" id="navbar-drop-3"
                                 data-toggle="dropdown"><i class="fas fa-globe"></i> ENG </a>
-                            <div class="dropdown-menu">
+                            <div class="dropdown-menu bg-dark fadeAnimation">
                                 <a class="dropdown-item" href="#">Bangla</a>
                                 <a class="dropdown-item" href="#">Hindi</a>
                                 <a class="dropdown-item" href="#">Spanish</a>
@@ -91,38 +92,26 @@
         <!-- Navbar End  -->
 
         <!-- Employee Details Modal   -->
-       <div class="container">
-           <div class="row">
-               <div class="col-md-12">
-                <button class="btn btn-primary d-block ml-auto mt-3 mr-5" data-toggle="modal" data-target="#employeeModal">View Employee Details <i class="fas fa-angle-right"></i></button>
-               <div class="modal fade" id="employeeModal">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header default-bg">
-                            <h4 class="modal-title text-white">Employee Details</h4>
-                            <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
-                        </div>
-                        <div class="modal-body py-5">
-                            <div class="employee-modal-list d-flex shadow py-3">
-                                <ul style="max-width: 50%;" >
-                                    <li>Employee Name :</li>
-                                    <li>Employee ID   :</li>
-                                    <li>Department    :</li>
-                                </ul>
-                                <ul  style="max-width: 50%;">
-                                    <li>John Brade</li>
-                                    <li>#5455498</li>
-                                    <li>Marketing</li>
-                                </ul>
-                            </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="verify-employee bg-white">
+                        <a href="#verify" class="btn default-bg text-white" data-toggle="collapse">Verify Employee Details <i class="fas fa-angle-right"></i></a>
+                        <div class="collapse" id="verify">
+                           <form action="" id="verifyEmployee" class="px-3 py-3">
+                               <div class="form-group mt-3">
+                                   <input type="number" class="form-control shadow bg-white" placeholder="Enter Employee ID" required>
+                               </div>
+                               <div class="form-group">
+                                   <button type="reset" class="btn default-bg text-white">Cancel</button>
+                                   <button type="submit" class="btn default-bg text-white">Find</button>
+                               </div>
+                           </form>
                         </div>
                     </div>
                 </div>
-               </div>
             </div>
-           </div>
-       </div>
-        <!-- Navbar End  -->
+            <!-- Navbar End  -->
     </header>
     <!-- Header End  -->
 
@@ -259,35 +248,38 @@
                 <div class="col-md-4">
                     <div class="gallery-item">
                         <img class="w-100" src="./images/img-gallery-1.png" data-target="#carouselExample"
-                        data-slide-to="0">
+                            data-slide-to="0">
                     </div>
-                    
+
                 </div>
                 <div class="col-md-4 upper-overlapping">
-                    <div class="gallery-item" >
-                        <video src="./videos/header.mp4" data-target="#carouselExample" data-slide-to="1" controls></video>
+                    <div class="gallery-item">
+                        <video src="./videos/header.mp4" data-target="#carouselExample" data-slide-to="1"
+                            controls></video>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="gallery-item">
                         <img class="w-100" src="./images/img-gallery-2.png" data-target="#carouselExample"
-                        data-slide-to="2">
+                            data-slide-to="2">
                     </div>
                 </div>
                 <div class="col-md-4 up-right-overlapping">
                     <div class="gallery-item">
-                        <video src="./videos/header.mp4" data-target="#carouselExample" data-slide-to="3" controls></video>
-                    </div> 
+                        <video src="./videos/header.mp4" data-target="#carouselExample" data-slide-to="3"
+                            controls></video>
+                    </div>
                 </div>
                 <div class="col-md-4 upper-overlapping">
                     <div class="gallery-item">
                         <img class="w-100" src="./images/img-gallery-3.png" data-target="#carouselExample"
-                        data-slide-to="4">
-                    </div> 
+                            data-slide-to="4">
+                    </div>
                 </div>
                 <div class="col-md-4 left-top-overlapping">
                     <div class="gallery-item">
-                        <video src="./videos/header.mp4" data-target="#carouselExample" data-slide-to="5" controls></video>
+                        <video src="./videos/header.mp4" data-target="#carouselExample" data-slide-to="5"
+                            controls></video>
                     </div>
                 </div>
             </div>
@@ -355,7 +347,7 @@
             </div>
         </div>
         <div class="container content-top-space">
-            <div class="row">
+            <div class="row d-flex justify-content-center">
                 <div class="col col-md-3 col-lg-2">
                     <div class="team-block text-center">
                         <img src="./images/team.jpg" alt="Team Member" class="img-fluid">
@@ -397,7 +389,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row d-flex justify-content-center">
                 <div class="col col-md-3 col-lg-2">
                     <div class="team-block text-center">
                         <img src="./images/team.jpg" alt="Team Member" class="img-fluid">
