@@ -58,6 +58,19 @@ p.section-sub-title,.bike-header-description p,.agent-feature-block p,.employee-
     line-height: 30px;
     color: #7F7F7F;
 }
+
+::-webkit-input-placeholder { /* Edge */
+    color: #6D757B;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #6D757B;
+  }
+  
+  ::placeholder {
+    color: #6D757B;
+  }
+
 /* Page Headers  */
 .about-header,.contact-header,.blog-header,.delivery-header,.tracker-header,.agent-header{
     background-size: cover;
@@ -270,7 +283,7 @@ section.why-choose-drivill {
     padding-right: 10px;
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
-ul.list::-webkit-scrollbar {
+ul.list::-webkit-scrollbar,.fare-list::-webkit-scrollbar {
     display: none;
   }
   
@@ -428,7 +441,6 @@ section.blog {
 
 .blog-block .blog-meta-data span, .single-post-meta span,.testimonial-quote p.clients-designation {
     font-size: 16px;
-    font-weight: 300;
     line-height: 18px;
     font-weight: 300;
     line-height: 18px;
@@ -824,16 +836,18 @@ h3.address-title {
 form#contact {
     margin: 0 auto;
 }
-form#contact label {
+form#contact label,.form-label {
     font-size: 16px;
     line-height: 18px;
     color: #2699FB;
 }
-form#contact input{
+form#contact input,.form-input{
     border:none;
     box-shadow:0px 3px 6px rgba(0,0,0,0.16);
     border-radius: 4px;
     padding: 18px 15px;
+    font-size: 16px;
+    line-height: 18px;
 }
 .quater-width {
     width: 33%;
@@ -969,7 +983,7 @@ Delivery Page Styles
     padding: 8px 25px;
     margin-right: 20px;
 }
-li.register-pill,#tab-login button, #tab-register button {
+li.register-pill,li.login-pill ,#tab-login button, #tab-register button {
     background: #2699FB;
     list-style: none;
     max-width: 200px;
@@ -977,7 +991,7 @@ li.register-pill,#tab-login button, #tab-register button {
     border-radius: 4px;
 }
 
-.register-pill a,#tab-login button, #tab-register button {
+.register-pill a,.login-pill a, #tab-login button, #tab-register button {
     color: #fff;
     font-size: 18px;
     line-height: 21px;
@@ -988,8 +1002,12 @@ li.register-pill,#tab-login button, #tab-register button {
     padding: 0px 0px 20px 0px;
     box-shadow: 0px 3px 20px rgba(0,0,0,0.16);
 }
-table.fare-table,table.fare-table td {
-    border: 2px solid #707070;
+.fare-list {
+    max-height: 700px;
+    overflow-y: scroll;
+}
+table.fare-table,table.fare-table td,.fare-table th {
+    border: 2px solid #70707096;
 }
 table.fare-table caption {
     caption-side: top;
@@ -1004,7 +1022,7 @@ table.fare-table caption {
     background: #2699FB;
 }
 table.fare-table thead {
-    background: #000;
+    background: #252525;
 }
 
 table.fare-table td {
@@ -1125,11 +1143,11 @@ section.bike-banner {
     background: #2699FB;
     color: #fff;
 }
-form#tab-bike,form#tab-car {
+form#tab-bike,form#tab-car,form#car-tab-form,form#vehicle-info {
     box-shadow: 0px 3px 20px rgba(0,0,0,0.16);
     padding-bottom: 30px;
 }
-form#tab-bike .form-group,form#tab-car .form-group {
+form#tab-bike .form-group,form#tab-car .form-group ,form#car-tab-form .form-group,form#vehicle-info .form-group{
     padding: 0px 20px;
 }
 form#tab-bike h2,h2.map-title,.form-title {
@@ -1154,10 +1172,18 @@ p.form-group-title {
     box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
     padding: 20px 5px;
 }
+.drop-here {
+    padding: 5px;
+    border: 1px dashed #C2CDDA;
+    border-radius: 4px;
+}
+.drop-here p:nth-child(2) {
+    color: #2699FB;
+}
 .drop-upload {
     margin-bottom: 20px;
 }
-.half-width input{
+.half-width input,.half-width select{
     width: 90%;
 }
 form#tab-car select{
