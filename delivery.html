@@ -197,80 +197,172 @@
                 </div>
 
                 <div class="col-lg-7">
-                    <div class="fare-list">
-                        <table class="table text-center fare-table medium-margin-top table-fixed">
-                            <caption>Delivery Fare</caption>
-                            <thead>
-                                <tr>
-                                    <th>Weight</th>
-                                    <th>Dhaka <br> (24 hours)</th>
-                                    <th>Outside Dhaka <br> (72 hours )</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>500 gm</td>
-                                    <td>BDT 30</td>
-                                    <td>BDT 50</td>
-                                </tr>
-                                <tr>
-                                    <td>1 kg</td>
-                                    <td>BDT 40</td>
-                                    <td>BDT 50</td>
-                                </tr>
-                                <tr>
-                                    <td>1.5 kg </td>
-                                    <td>BDT 30</td>
-                                    <td>BDT 50</td>
-                                </tr>
-                                <tr>
-                                    <td>2 kg</td>
-                                    <td>BDT 30</td>
-                                    <td>BDT 50</td>
-                                </tr>
-                                <tr>
-                                    <td>2.5 kg</td>
-                                    <td>BDT 30</td>
-                                    <td>BDT 50</td>
-                                </tr>
-                                <tr>
-                                    <td>3 kg</td>
-                                    <td>BDT 30</td>
-                                    <td>BDT 50</td>
-                                </tr>
-                                <tr>
-                                    <td>3.5</td>
-                                    <td>BDT 30</td>
-                                    <td>BDT 50</td>
-                                </tr>
-                                <tr>
-                                    <td>4 kg</td>
-                                    <td>BDT 30</td>
-                                    <td>BDT 50</td>
-                                </tr>
-                                <tr>
-                                    <td>4.5 kg</td>
-                                    <td>BDT 50</td>
-                                    <td>BDT 50</td>
-                                </tr>
-                                <tr>
-                                    <td>5 kg</td>
-                                    <td>BDT 50</td>
-                                    <td>BDT 50</td>
-                                </tr>
-                                <tr>
-                                    <td>5 kg</td>
-                                    <td>BDT 50</td>
-                                    <td>BDT 50</td>
-                                </tr>
-                                <tr>
-                                    <td>5 kg</td>
-                                    <td>BDT 50</td>
-                                    <td>BDT 50</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="fair tab">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="pill" href="#normal">Normal </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#urgent">Urgent</a>
+                            </li>
+                        </ul>
                     </div>
+                    <div class="tab-content">
+                        <div class="tab-pane active container" id="normal">
+                            <div class="fare-list fare-list-normal">
+                                <table class="table text-center fare-table medium-margin-top table-fixed">
+                                    <caption>Delivery Fare (Normal)</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>Weight</th>
+                                            <th>Dhaka <br> (24 hours)</th>
+                                            <th>Outside Dhaka <br> (72 hours )</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>500 gm</td>
+                                            <td>BDT 30</td>
+                                            <td>BDT 50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1 kg</td>
+                                            <td>BDT 40</td>
+                                            <td>BDT 50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1.5 kg </td>
+                                            <td>BDT 30</td>
+                                            <td>BDT 50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2 kg</td>
+                                            <td>BDT 30</td>
+                                            <td>BDT 50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2.5 kg</td>
+                                            <td>BDT 30</td>
+                                            <td>BDT 50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3 kg</td>
+                                            <td>BDT 30</td>
+                                            <td>BDT 50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3.5</td>
+                                            <td>BDT 30</td>
+                                            <td>BDT 50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4 kg</td>
+                                            <td>BDT 30</td>
+                                            <td>BDT 50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4.5 kg</td>
+                                            <td>BDT 50</td>
+                                            <td>BDT 50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5 kg</td>
+                                            <td>BDT 50</td>
+                                            <td>BDT 50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5 kg</td>
+                                            <td>BDT 50</td>
+                                            <td>BDT 50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5 kg</td>
+                                            <td>BDT 50</td>
+                                            <td>BDT 50</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane container" id="urgent">
+                            <div class="fare-list fare-list-urgent">
+                                <table class="table text-center fare-table medium-margin-top table-fixed">
+                                    <caption>Delivery Fare (Urgent)</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>Weight</th>
+                                            <th>Dhaka <br> (24 hours)</th>
+                                            <th>Outside Dhaka <br> (72 hours )</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>500 gm</td>
+                                            <td>BDT 30</td>
+                                            <td>BDT 50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1 kg</td>
+                                            <td>BDT 40</td>
+                                            <td>BDT 50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1.5 kg </td>
+                                            <td>BDT 30</td>
+                                            <td>BDT 50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2 kg</td>
+                                            <td>BDT 30</td>
+                                            <td>BDT 50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2.5 kg</td>
+                                            <td>BDT 30</td>
+                                            <td>BDT 50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3 kg</td>
+                                            <td>BDT 30</td>
+                                            <td>BDT 50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3.5</td>
+                                            <td>BDT 30</td>
+                                            <td>BDT 50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4 kg</td>
+                                            <td>BDT 30</td>
+                                            <td>BDT 50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4.5 kg</td>
+                                            <td>BDT 50</td>
+                                            <td>BDT 50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5 kg</td>
+                                            <td>BDT 50</td>
+                                            <td>BDT 50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5 kg</td>
+                                            <td>BDT 50</td>
+                                            <td>BDT 50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5 kg</td>
+                                            <td>BDT 50</td>
+                                            <td>BDT 50</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>

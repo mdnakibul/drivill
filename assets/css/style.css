@@ -369,7 +369,7 @@ ul.list::-webkit-scrollbar,.fare-list::-webkit-scrollbar {
     box-shadow: 0px 3px 25px rgba(0,0,0,0.16);
     border-radius: 8px;
 }
-}
+
 .earn-block img {
     border-radius: 15px;
     box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
@@ -503,6 +503,7 @@ h4.clients-name {
     box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
     margin-right: 15px;
     max-width: 30%;
+    max-height: 176px;
 }
 
 .testimonial-quote h4 {
@@ -979,6 +980,9 @@ Delivery Page Styles
 .tab-forms .nav-pills .nav-link {
     border-radius: 0px;
 }
+.tab-forms .nav-pills .nav-link.active {
+    background: #00A9F9;
+}
 .tab-forms form {
     margin-top: 30px;
 }
@@ -1004,11 +1008,28 @@ li.register-pill,li.login-pill ,#tab-login button, #tab-register button {
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 1px;
+    background: #00A9F9;
 }
 .tab-forms {
     background: #fff;
     padding: 0px 0px 20px 0px;
     box-shadow: 0px 3px 20px rgba(0,0,0,0.16);
+}
+.fair.tab ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.fair.tab ul li a{
+    border:1px solid #00A9F9;
+    border-radius:29px;
+    margin-left:20px
+}
+.fair.tab ul li a.active {
+    background: #00A9F9;
+    color: #fff;
+    border-radius: 29px;
+    padding: 8px 20px;
 }
 .fare-list {
     max-height: 700px;
@@ -1027,7 +1048,7 @@ table.fare-table caption {
     line-height: 32px;
     letter-spacing: 1px;
     color: #fff;
-    background: #2699FB;
+    background: #00A9F9;
 }
 table.fare-table thead {
     background: #252525;

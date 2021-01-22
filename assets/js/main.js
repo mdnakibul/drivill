@@ -5,6 +5,9 @@ $(document).ready(function(){
       margin:15,
       nav:true,
       navText:["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+      autoplay:true,
+      autoplayTimeout:1000,
+      autoplayHoverPause:true,
       responsiveClass:true,
       responsive:{
           0:{
@@ -18,20 +21,20 @@ $(document).ready(function(){
       }
   });
 
-  $('#why-choose-carousel').owlCarousel();
+  $('#why-choose-carousel').owlCarousel({
+    responsiveClass:true,
+    item:4,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true
+  });
+
   $('#earn-carousel').owlCarousel({
       responsiveClass:true,
-      responsive:{
-          0:{
-              item:1
-          },
-          768:{
-              item:3
-          },
-          992:{
-              item:4
-          }
-      }
+      item:4,
+      autoplay:true,
+      autoplayTimeout:1000,
+      autoplayHoverPause:true
   });
 
   });
