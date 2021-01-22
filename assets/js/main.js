@@ -16,7 +16,24 @@ $(document).ready(function(){
   
           },
       }
-  })
+  });
+
+  $('#why-choose-carousel').owlCarousel();
+  $('#earn-carousel').owlCarousel({
+      responsiveClass:true,
+      responsive:{
+          0:{
+              item:1
+          },
+          768:{
+              item:3
+          },
+          992:{
+              item:4
+          }
+      }
+  });
+
   });
   $( '.card h3' ).on( "click", function() {
     $( this ).find( 'span' ).toggleClass( "fa-angle-up fa-angle-right" );

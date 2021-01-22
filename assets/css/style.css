@@ -8,7 +8,7 @@ font-family: helvetica;
 src: url(../fonts/Helvetica.ttf);
 }
 @font-face{
-font-family: "helveticaNue";
+font-family: "helveticaNeue";
 src: url(../fonts/HelveticaNeue.ttf);
 }
 @font-face{
@@ -22,7 +22,7 @@ src: url(../fonts/HelveticaNeue.ttf);
     font-family: helvetica;
 }
 .helveticaNue-font{
-    font-family: "helveticaNue",sans-serif;
+    font-family: "helveticaNeue",sans-serif;
 }
 .default-bg{
     background:#2699FB;
@@ -40,7 +40,7 @@ src: url(../fonts/HelveticaNeue.ttf);
     margin-top: 40px;
 }
 body,html{
-    font-family:helveticaNue ;
+    font-family:helveticaNeue ;
     letter-spacing: 0.2px;
     scroll-behavior: smooth;
 }
@@ -221,8 +221,9 @@ section.why-choose-drivill {
     box-shadow: 0px 3px 6px rgba(0,0,0,0.26);
 }
 .why-choose-block img,.earn-block img{
-    width: 170px;
+    width: 170px !important;
     height: 170px;
+    margin: 0 auto;
 }
 .why-choose-block h3,.earn-block h3, .earning-feature-description h3,.agent-feature-block h4{
     font-size: 28px;
@@ -361,6 +362,7 @@ ul.list::-webkit-scrollbar,.fare-list::-webkit-scrollbar {
 */
 .earn-block{
     margin-bottom: 20px;
+    text-align: center;
 }
 .earn-block img {
     border-radius: 15px;
