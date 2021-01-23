@@ -28,7 +28,7 @@ src: url(../fonts/HelveticaNeue.ttf);
     background:#2699FB;
 }
 .section-bg{
-    background-color: #F6F9FC;
+    background-color: transparent;
 }
 .default-color{
     color: #2699FB;
@@ -172,7 +172,7 @@ header{
 ================================
 */
 section.feature {
-    box-shadow: -4px 14px 11px -3px #C4C4C4;
+    box-shadow: 1px 4px 11px -3px #C4C4C4;
 }
 .feature-icon {
     width: 5%;
@@ -207,20 +207,20 @@ section.feature {
 /* Styling Why Choose Block 
 ======================================
 */
-section.why-choose-drivill {
-    background: #F6F9FC;
-}
+
 .why-choose-block {
-    text-align: center;
     margin-bottom: 40px;
-    box-shadow: 0px 3px 25px rgba(0,0,0,0.16);
     border-radius: 8px;
+    padding: 8px 15px;
 }
 
 .why-choose-block img {
-    border: 1px solid #475677;
     border-radius: 15px;
     box-shadow: 0px 3px 6px rgba(0,0,0,0.26);
+    
+}
+.why-choose-description {
+    padding-left: 20px;
 }
 .why-choose-block img,.earn-block img{
     width: 170px !important;
@@ -235,7 +235,9 @@ section.why-choose-drivill {
     padding:15px 0px;
     text-transform:capitalize;
 }
-
+.why-choose-block h3{
+    padding: 0px;
+}
 .why-choose-block p,.earn-block p,.timeline-container p, .delivery-map p {
     font-size: 20px;
     font-weight: 300;
@@ -401,7 +403,7 @@ ul.list::-webkit-scrollbar,.fare-list::-webkit-scrollbar {
 */
 
 section.blog {
-    background: #F6F9FC;
+    background: transparent;
 }
 .categories a {
     margin-right: 20px;
@@ -1018,18 +1020,20 @@ li.register-pill,li.login-pill ,#tab-login button, #tab-register button {
 .fair.tab ul {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+}
+.fair.tab ul li {
+    width: 50%;
 }
 .fair.tab ul li a{
-    border:1px solid #00A9F9;
-    border-radius:29px;
-    margin-left:20px
+    border:1px solid #252525;
+    border-radius: 0px;
+    text-align: center;
 }
 .fair.tab ul li a.active {
-    background: #00A9F9;
+    background: #252525;
     color: #fff;
-    border-radius: 29px;
     padding: 8px 20px;
+    width: 100%;
 }
 .fare-list {
     max-height: 700px;
@@ -1230,8 +1234,7 @@ video#header-bg-video {
 }
 section.why-join .why-choose-block img{
     box-shadow:0px 3px 6px rgba(0,0,0,0.16);
-    border-radius:0px;
-    padding:15px 20px;
+    border-radius:8px;
     border:none;
 }
 .employee-quote-table tbody tr:nth-of-type(even){
