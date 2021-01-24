@@ -18,6 +18,11 @@ src: url(../fonts/HelveticaNeue.ttf);
 /* Default Styles 
 =====================================
 */
+:root{
+    --blue:#00A9F9;
+    --black:#000;
+    --white:#fff;
+}
 .helvetica-font{
     font-family: helvetica;
 }
@@ -25,13 +30,13 @@ src: url(../fonts/HelveticaNeue.ttf);
     font-family: "helveticaNeue",sans-serif;
 }
 .default-bg{
-    background:#2699FB;
+    background:var(--blue);
 }
 .section-bg{
     background-color: transparent;
 }
 .default-color{
-    color: #2699FB;
+    color: var(--blue);
 }
 .section-padding{
     padding: 50px 0px;
@@ -50,13 +55,13 @@ h2.section-title {
     font-size: 38px;
     font-weight: bold;
     line-height: 43px;
-    color: #2699FB;
+    color: var(--blue);
 }
 p.section-sub-title,.bike-header-description p,.agent-feature-block p,.employee-quote>p {
     font-size: 20px;
     font-weight: 300;
     line-height: 30px;
-    color: #7F7F7F;
+    color: var(--black);
 }
 
 ::-webkit-input-placeholder { /* Edge */
@@ -100,7 +105,7 @@ header{
     letter-spacing: 1.5px;
 }
 .header-menu ul li a:hover{
-    color: #2699FB !important;
+    color: var(--blue) !important;
     transition: all 0.5s;
 }
 .dropdown:hover>.dropdown-menu {
@@ -112,10 +117,10 @@ header{
       pointer-events: none;
 }
 .dropdown-menu a{
-    color: #fff;
+    color: var(--white);
 }
 .dropdown-menu a:hover{
-    color: #2699FB;
+    color: var(--blue);
     background: #343a40;
 }
 .fadeAnimation{
@@ -153,16 +158,16 @@ header{
     border: none;
     font-size: 20px;
     letter-spacing: 2px;
-    color: #fff;
-    border: 1px solid #fff;
+    color: var(--white);
+    border: 1px solid var(--white);
     padding: 5px 15px;
     transition: all 0.5s;
     margin-bottom: 10px;
     border-radius: 5px;
 }
 .header-call-to-action button:hover{
-    background: #fff;
-    color: #2699FB;
+    background: var(--white);
+    color: var(--blue);
 }
 .header-call-to-action button:hover i {
     margin-left: 5px;
@@ -189,18 +194,18 @@ section.feature {
     text-transform: capitalize;
     letter-spacing: 2px;
     line-height: 28px;
-    color: #2699FB;
+    color: var(--blue);
 }
 
 .feature-description p, .earning-feature-description p, .joining-block p,.bike-tab-right p{
-    color: #7F7F7F;
+    color: var(--black);
     font-size: 20px;
     line-height: 30px;
     font-weight: 300;
 }
 
 .feature-icon i {
-    color: #2699FB;
+    color: var(--blue);
     font-size: 20px;
 }
 
@@ -223,28 +228,32 @@ section.feature {
     padding-left: 20px;
 }
 .why-choose-block img,.earn-block img{
-    width: 170px !important;
-    height: 170px;
+    max-width: 30%;
+    max-height: 141px;
     margin: 0 auto;
 }
 .why-choose-block h3,.earn-block h3, .earning-feature-description h3,.agent-feature-block h4{
     font-size: 28px;
     font-weight: bold;
     line-height: 32px;
-    color: #2699FB;
+    color: var(--blue);
     padding:15px 0px;
     text-transform:capitalize;
 }
 .why-choose-block h3{
     padding: 0px;
+    font-size: 24px;
 }
 .why-choose-block p,.earn-block p,.timeline-container p, .delivery-map p {
     font-size: 20px;
     font-weight: 300;
     line-height: 30px;
-    color: #7F7F7F;
+    color: var(--black);
 }
-
+.why-choose-block p{
+    font-size: 20px;
+    line-height: 24px;
+}
 /* Styling Service Section  */
 .scroller {
     text-align:center;
@@ -252,8 +261,8 @@ section.feature {
     padding: 7px 15px;
     white-space:no-wrap;
     vertical-align:middle;
-    background-color:#2699FB;
-    color: #fff;
+    background-color:var(--blue);
+    color: var(--white);
   }
   
   .scroller-right{
@@ -277,7 +286,7 @@ section.feature {
 
 .scroll-pills ul li a.nav-link,.scroll-pills ul li a.active{
     margin-right: 20px;
-    border: 1px solid #2699FB;
+    border: 1px solid var(--blue);
     border-radius: 29px;
     padding: 8px 20px;
     display: flex;
@@ -380,17 +389,17 @@ ul.list::-webkit-scrollbar,.fare-list::-webkit-scrollbar {
     text-transform: capitalize;
     font-size: 20px;
     font-weight: 600;
-    border: 1px solid #2699FB;
+    border: 1px solid var(--blue);
     padding: 5px 15px;
-    color: #2699FB;
+    color: var(--blue);
     border-radius: 5px;
 }
 .earn-block a i {
     padding-left: 10px;
 }
 .earn-block a:hover {
-    background: #2699FB;
-    color: #fff;
+    background: var(--blue);
+    color: var(--white);
     text-decoration: none;
 }
 
@@ -407,12 +416,12 @@ section.blog {
 }
 .categories a {
     margin-right: 20px;
-    border: 1px solid #2699FB;
+    border: 1px solid var(--blue);
     border-radius: 29px;
     padding: 5px 15px;
     font-size: 24px;
     font-weight: 600;
-    color: #2699FB;
+    color: var(--blue);
     text-transform: capitalize;
     text-decoration: none;
     margin-bottom: 10px;
@@ -423,14 +432,14 @@ section.blog {
 }
 
 .categories a:hover {
-    color: #fff;
-    background: #2699FB;
+    color: var(--white);
+    background: var(--blue);
     transition: all 0.5s;
 }
 .blog-block {
     box-shadow: 0px 3px 30px #00000029;
     border-radius: 8px;
-    background: #fff;
+    background: var(--white);
     padding-bottom: 50px;
 }
 .blog-block img {
@@ -444,7 +453,7 @@ section.blog {
     font-size: 24px;
     font-weight: bold;
     line-height: 36px;
-    color: #2699FB;
+    color: var(--blue);
     padding-top: 15px;
     letter-spacing: 2px;
 }
@@ -454,7 +463,7 @@ section.blog {
     line-height: 18px;
     font-weight: 300;
     line-height: 18px;
-    color: #7F7F7F;;
+    color: var(--black);;
 }
 .blog-block .blog-meta-data span:nth-child(2){
     float: right;
@@ -462,7 +471,7 @@ section.blog {
 .blog-block p.blog-content {
     font-size: 18px;
     line-height: 34px;
-    color: #7F7F7F;
+    color: var(--black);
 }
 
 .blog-block a.read-more {
@@ -477,7 +486,7 @@ a.see-more {
     text-transform: capitalize;
     font-size:20px;
     line-height:30px;
-    color:#2699FB;
+    color:var(--blue);
     font-weight:500;
 }
 
@@ -489,7 +498,7 @@ a.see-more:hover i {
 button.btn-customized,button.btn-customized-2 {
     border: none;
     background: transparent;
-    color: #2699FB;
+    color: var(--blue);
     font-size: 100px;
 }
 h4.clients-name {
@@ -500,7 +509,7 @@ h4.clients-name {
 }
 
 .testimonial-block img {
-    border: 5px solid #2699FB;
+    border: 5px solid var(--blue);
     border-radius: 50%;
     box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
     margin-right: 15px;
@@ -509,31 +518,31 @@ h4.clients-name {
 }
 
 .testimonial-quote h4 {
-    color: #2699FB;
+    color: var(--blue);
 }
 
 p.clients-feedback {
     font-size: 20px;
     font-weight: 300;
     line-height: 30px;
-    color: #7F7F7F;
+    color: var(--black);
 }
 /* App Download Section  */
 .user-app-download h2,.driver-app-download h2{
     font-size: 28px;
     font-weight: bold;
     line-height: 34px;
-    color: #2699FB;
+    color: var(--blue);
 }
 .app-feature-block i {
     font-size: 40px;
     display: block;
     text-align: center;
     padding-bottom: 15px;
-    color: #2699FB;
+    color: var(--blue);
 }
 .app-feature-block h3 {
-    color: #2699FB;
+    color: var(--blue);
     font-weight: bold;
 }
 /* Styling Footer Section 
@@ -543,7 +552,7 @@ h3.footer-title {
     font-size: 22px;
     line-height: 26px;
     letter-spacing: 1px;
-    color: #fff;
+    color: var(--white);
     position: relative;
     padding-bottom: 10px;
     text-transform: capitalize;
@@ -570,14 +579,14 @@ h3.footer-title:before {
 }
 
 .footer-1 ul li a {
-    color: #fff;
+    color: var(--white);
     background: #6A6975;
     padding: 10px 10px;
     border-radius: 50%;
     transition: all 0.4s ease-in-out;
 }
 .footer-1 ul li a:hover{
-    color: #fff;
+    color: var(--white);
     background: #3979F3;
 }
 
@@ -598,7 +607,7 @@ h3.footer-title:before {
 form#footer-newsletter input {
     border-radius: 8px;
     background: #C9D2D8;
-    color: #fff;
+    color:var(--white);
     border: none;
     padding: 10px 15px;
     width: 95%;
@@ -617,7 +626,7 @@ form#footer-newsletter i.fa-envelope {
 }
 footer{
     padding: 10px;
-    background: #fff;
+    background: var(--white);
     text-align: center;
     font-size: 20px;
     line-height: 24px;
@@ -643,12 +652,12 @@ Single Post Page Styling
 .single-post-body ,.employee-modal-list ul li{
     padding-top: 20px;
     font-size: 20px;
-    color: #7F7F7F;
+    color: var(--black);
     font-weight: 300;
 }
 .sidebar-post {
     height: 168px;
-    background: #fff;
+    background: var(--white);
     border-radius: 8px;
     box-shadow: 0px 3px 25px rgba(0,0,0,0.16);
     margin-bottom: 20px;
@@ -669,7 +678,7 @@ Single Post Page Styling
 }
 .sidebar-post h4 {
     font-size: 16px;
-    color: #2699FB;
+    color: var(--blue);
     font-weight: bold;
     letter-spacing: 1px;
     line-height: 22px;
@@ -682,7 +691,7 @@ Single Post Page Styling
 .sidebar-post-content p,.employee-quote-table td {
     font-size: 16px;
     font-weight: 300;
-    color: #7F7F7F;
+    color: var(--black);
     line-height: 26px;
 }
 /* Other */
@@ -699,8 +708,8 @@ img.blank-phone {
     top: 50%;
     height: 32px;
     width: 32px;
-    background: #2699FB !important;
-    color: #fff !important;
+    background: var(--blue) !important;
+    color: var(--white) !important;
 }
 .owl-carousel .owl-next{
     position: absolute;
@@ -708,8 +717,8 @@ img.blank-phone {
     top: 50%;
     height: 32px;
     width: 32px;
-    background: #2699FB !important;
-    color: #fff !important;
+    background: var(--blue) !important;
+    color: var(--white) !important;
 }
 .owl-carousel .owl-prev,.owl-carousel .owl-next{
     opacity: 0.8;
@@ -749,16 +758,16 @@ Styling Contact Us Page
 
 .support-type ul li a {
     font-size: 20px;
-    color: #fff;
-    background: #2699FB;
+    color: var(var(--white));
+    background: var(--blue);
     padding: 20px;
     border-radius: 50%;
     box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
 }
 
 .support-type ul li a:hover {
-    background: #fff;
-    color: #2699FB;
+    background: var(--white);
+    color: var(--blue);
     transition: all 0.5s;
 }
 
@@ -771,7 +780,7 @@ Styling Contact Us Page
 h3.address-title {
     font-size: 28px;
     font-weight: bold;
-    color: #2699FB;
+    color: var(--blue);
     letter-spacing: 2px;
     line-height: 32px;
 }
@@ -784,11 +793,11 @@ h3.address-title {
 .office-address ul li {
     list-style: none;
     margin-bottom: 10px;
-    color: #7F7F7F;
+    color: var(--black);
 }
 
 .office-address ul li a {
-    color: #7F7F7F;
+    color: var(--black);
 }
 
 .office-address ul {
@@ -799,7 +808,7 @@ h3.address-title {
     width: 100%;
 }
 .contact-form{
-    background-color: #fff;
+    background-color: var(--white);
     padding: 30px 25px;
     box-shadow: 0px 3px 20px rgba(0,0,0,0.1);
 }
@@ -808,7 +817,7 @@ h3.address-title {
     font-weight: bold;
     text-align: center;
     line-height: 32px;
-    color: #2699FB;
+    color: var(--blue);
 }
 .purpose {
     margin-top: 50px;
@@ -825,7 +834,7 @@ h3.address-title {
 .contact-form .purpose ul li a {
     font-size: 25px;
     font-weight: 500;
-    border: 1px solid #2699FB;
+    border: 1px solid var(--blue);
     border-radius: 30px;
     padding: 10px 15px;
 }
@@ -834,8 +843,8 @@ h3.address-title {
     border: none;
 }
 .contact-form .purpose ul li a:hover {
-    background: #2699FB;
-    color: #fff;
+    background: var(--blue);
+    color: var(--white);
      text-decoration: none;
     transition: all 0.5s;
 }
@@ -850,7 +859,7 @@ form#contact {
 form#contact label,.form-label {
     font-size: 16px;
     line-height: 18px;
-    color: #2699FB;
+    color: var(--blue);
 }
 form#contact input,.form-input{
     border:none;
@@ -870,7 +879,7 @@ form#contact input,.form-input{
 }
 .quater-width input{
     width: 90%;
-    background:#fff;
+    background:var(--white);
     
 }
 
@@ -879,8 +888,8 @@ input#message {
 }
 form#contact button {
     border: none;
-    color: #fff;
-    background: #2699FB;
+    color: var(--white);
+    background:var(--blue);
     border-radius: 4px;
     font-size: 20px;
     font-weight: 500;
@@ -913,7 +922,7 @@ form#verifyEmployee input {
  ===================================== */
  section.drivill-info p.company-description , .office-description p{
     font-size: 20px;
-    color: #7F7F7F;
+    color: var(--black);
     line-height: 38px;
     font-weight: 300;
 }
@@ -946,19 +955,19 @@ form#verifyEmployee input {
 
 .team-block img {
     border-radius: 50%;
-    border: 5px solid #2699FB;
+    border: 5px solid var(--blue);
 }
 .team-block h4 {
     font-size: 27px;
     font-weight: 500;
-    color: #2699FB;
+    color: var(--blue);
     line-height: 31px;
     padding-top: 15px;
 }
 
 .team-block p {
     font-size: 18px;
-    color: #7F7F7F;
+    color: var(--black);
     font-weight: 300;
     line-height: 21px;
 }
@@ -974,7 +983,7 @@ Delivery Page Styles
     background-image: url(../../images/deliver-header.png);
 }
 .tab-forms {
-    background: #fff;
+    background: var(--white);
     padding: 0px 0px 20px 0px;
     box-shadow: 0px 3px 20px rgba(0,0,0,0.16);
 }
@@ -983,7 +992,7 @@ Delivery Page Styles
     border-radius: 0px;
 }
 .tab-forms .nav-pills .nav-link.active {
-    background: #00A9F9;
+    background: var(--blue);
 }
 .tab-forms form {
     margin-top: 30px;
@@ -998,7 +1007,7 @@ Delivery Page Styles
     margin-right: 20px;
 }
 li.register-pill,li.login-pill ,#tab-login button, #tab-register button {
-    background: #2699FB;
+    background: var(--blue);
     list-style: none;
     max-width: 200px;
     display: inline-block;
@@ -1006,14 +1015,14 @@ li.register-pill,li.login-pill ,#tab-login button, #tab-register button {
 }
 
 .register-pill a,.login-pill a, #tab-login button, #tab-register button {
-    color: #fff;
+    color: var(--white);
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 1px;
-    background: #00A9F9;
+    background: var(var(--blue));
 }
 .tab-forms {
-    background: #fff;
+    background: var(--white);
     padding: 0px 0px 20px 0px;
     box-shadow: 0px 3px 20px rgba(0,0,0,0.16);
 }
@@ -1031,7 +1040,7 @@ li.register-pill,li.login-pill ,#tab-login button, #tab-register button {
 }
 .fair.tab ul li a.active {
     background: #252525;
-    color: #fff;
+    color: var(--white);
     padding: 8px 20px;
     width: 100%;
 }
@@ -1051,8 +1060,8 @@ table.fare-table caption {
     font-weight: 500;
     line-height: 32px;
     letter-spacing: 1px;
-    color: #fff;
-    background: #00A9F9;
+    color: var(--white);
+    background: var(--blue);
 }
 table.fare-table thead {
     background: #252525;
@@ -1080,7 +1089,7 @@ table.fare-table th {
 .joining-block h4 {
     font-size: 20px;
     line-height: 23px;
-    color: #2699FB;
+    color: var(--blue);
     position: relative;
 }
 .joining-block h4::before {
@@ -1091,21 +1100,21 @@ table.fare-table th {
 }
 /* FAQ  */
 .single-question {
-    background: #fff;
+    background:var(--white);
     box-shadow: 0px 3px 20px rgba(0,0,0,0.16);
     display: flex;
     justify-content: space-around;
     margin-bottom: 30px;
 }
 .card.single-question .card-header {
-    background: #fff;
+    background: var(--white);
     border-bottom: none;
 }
 div#accordion .card-header h3 a {
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
-    color: #2699FB;
+    color: var(--blue);
     padding: 10px 20px;
     text-decoration: none;
 }
@@ -1136,7 +1145,7 @@ section.bike-banner {
 }
 .bike-header-description h2 {
     font-size: 38px;
-    color: #fff;
+    color: var(--white);
     font-weight: bold;
     line-height: 43px;
 }
@@ -1145,8 +1154,8 @@ section.bike-banner {
 }
 .bike-header-description a {
     text-decoration: none;
-    color: #fff;
-    background: #2699FB;
+    color: var(--white);
+    background: var(--blue);
     padding: 15px 35px;
     font-size: 22px;
     font-weight: 500;
@@ -1173,8 +1182,8 @@ section.bike-banner {
 }
 
 .earning-form-tab ul li a.nav-link:hover {
-    background: #2699FB;
-    color: #fff;
+    background: var(--blue);
+    color: var(--white);
 }
 form#tab-bike,form#tab-car,form#car-tab-form,form#vehicle-info {
     box-shadow: 0px 3px 20px rgba(0,0,0,0.16);
@@ -1196,8 +1205,8 @@ form#tab-bike .form-group,form#tab-car .form-group ,form#car-tab-form .form-grou
 }
 form#tab-bike h2,h2.map-title,.form-title {
     text-align: center;
-    background: #2699FB;
-    color: #fff;
+    background: var(--blue);
+    color: var(--white);
     font-size: 28px;
     line-height: 32px;
     font-weight: 500;
@@ -1207,7 +1216,7 @@ form#tab-bike h2,h2.map-title,.form-title {
 p.form-group-title {
     font-size: 16px;
     line-height: 18px;
-    color: #2699FB;
+    color: var(--blue);
 }
 .upload-box {
     background: #F5F6FA;
@@ -1222,7 +1231,7 @@ p.form-group-title {
     border-radius: 4px;
 }
 .drop-here p:nth-child(2) {
-    color: #2699FB;
+    color: var(--blue);
 }
 .drop-upload {
     margin-bottom: 20px;
@@ -1253,8 +1262,8 @@ section.why-join .why-choose-block img{
     background-color: #F6F9FC;
 }
 .table-btn, .map-back a{
-    color: #fff;
-    background: #2699FB;
+    color: var(--white);
+    background: var(--blue);
     border-radius: 0px;
     padding: 10px 25px;
 }
@@ -1273,7 +1282,7 @@ section.why-join .why-choose-block img{
 #employee-carousel a.carousel-control-prev span.fas.fa-angle-left,#employee-carousel a.carousel-control-next span.fas.fa-angle-right{
     font-size: 30px;
     color: white;
-    background: #2699FB;
+    background: var(--blue);
     padding: 10px;  
 }
 #employee-carousel a.carousel-control-prev span.fas.fa-angle-left{
@@ -1282,11 +1291,7 @@ section.why-join .why-choose-block img{
 #employee-carousel a.carousel-control-next span.fas.fa-angle-right{
     margin-right: -169px;
 }
-/* font-size: 30px;
-color: white;
-background: #2699FB;
-padding: 10px;
-    margin-right: -170px; */
+
 /*==============================================================
  Earn With Bike 1 Page Styles  
  ===============================================================*/
@@ -1313,7 +1318,7 @@ section.agent-feature {
     margin-top: -10%;
 }
 .agent-feature-block {
-    background: #fff;
+    background: var(--white);
     border-radius: 8px;
     box-shadow: 0px 3px 25px rgba(0,0,0,0.16);
     padding: 20px 10px;
@@ -1328,7 +1333,7 @@ section.agent-feature {
     content: '';
     position: absolute;
     width: 3px;
-    background-color: #2699FB;
+    background-color: var(--blue);
     top: 0;
     bottom: 0;
     left: 0;
@@ -1347,8 +1352,8 @@ section.agent-feature {
     width: 25px;
     height: 25px;
     left: -14px;
-    background-color: white;
-    border: 4px solid #2699FB;
+    background-color:var(--white);
+    border: 4px solid var(--blue);
     top: 0;
     border-radius: 50%;
     z-index: 1;
@@ -1364,6 +1369,6 @@ section.agent-feature {
 }
 .delivery-map {
     padding: 10px;
-    background: #fff;
+    background: var(--white);
     box-shadow: 0px 3px 25px rgba(0,0,0,0.16);
 }

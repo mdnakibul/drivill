@@ -67,6 +67,12 @@
     .testimonial-block{
         flex-wrap: wrap;
     }
+    .why-choose-block h3{
+        font-size: 20px;
+    }
+    .why-choose-block p{
+        font-size: 16px;
+    }
 }
 /* small Mobile View  */
 @media only screen and (max-width: 380px){
