@@ -72,6 +72,13 @@
     }
     .why-choose-block p{
         font-size: 16px;
+        text-align: justify;
+    }
+    .owl-carousel .owl-prev{
+        left: 0%;
+    }
+    .owl-carousel .owl-next{
+        right: 0%;
     }
 }
 /* small Mobile View  */

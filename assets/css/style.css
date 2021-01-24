@@ -5,7 +5,8 @@ Version : 1.0
 /* Loading Fonts   */
 @font-face{
 font-family: helvetica;
-src: url(../fonts/Helvetica.ttf);
+src: url(../fonts/HelveticaNeue-Medium.otf);
+font-weight: 600;
 }
 @font-face{
 font-family: "helveticaNeue";
@@ -32,11 +33,14 @@ src: url(../fonts/HelveticaNeue.ttf);
 .default-bg{
     background:var(--blue);
 }
+.black-bg{
+    background: var(--black);
+}
 .section-bg{
     background-color: transparent;
 }
 .default-color{
-    color: var(--blue);
+    color: var(--blue) !important;
 }
 .section-padding{
     padding: 50px 0px;
@@ -48,6 +52,7 @@ body,html{
     font-family:helveticaNeue ;
     letter-spacing: 0.2px;
     scroll-behavior: smooth;
+    font-weight: 600;
 }
 h2.section-title {
     text-transform: capitalize;
@@ -219,18 +224,15 @@ section.feature {
     padding: 8px 15px;
 }
 
-.why-choose-block img {
-    border-radius: 15px;
-    box-shadow: 0px 3px 6px rgba(0,0,0,0.26);
-    
-}
+
 .why-choose-description {
     padding-left: 20px;
 }
 .why-choose-block img,.earn-block img{
     max-width: 30%;
-    max-height: 141px;
+    max-height: 110px;
     margin: 0 auto;
+    border-radius: 4px;
 }
 .why-choose-block h3,.earn-block h3, .earning-feature-description h3,.agent-feature-block h4{
     font-size: 28px;
@@ -1078,7 +1080,15 @@ table.fare-table th {
     line-height: 31px;
     color: #FAFDFF;
 }
+.terms {
+    border: 1px solid var(--black);
+    padding-top: 18px;
+    margin-top: 30px;
+}
 
+.terms li {
+    font-size:16px;
+}
 .earning-feature-description {
     padding-left: 20px;
     margin-bottom: 30px;
