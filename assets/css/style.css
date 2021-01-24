@@ -3,15 +3,7 @@ Product Name : Drivill
 Version : 1.0
 */
 /* Loading Fonts   */
-@font-face{
-font-family: helvetica;
-src: url(../fonts/HelveticaNeue-Medium.otf);
-font-weight: 600;
-}
-@font-face{
-font-family: "helveticaNeue";
-src: url(../fonts/HelveticaNeue.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
 @font-face{
     font-family: metropolish;
     src: url(../fonts/Metropolis-Thin.otf);
@@ -23,12 +15,6 @@ src: url(../fonts/HelveticaNeue.ttf);
     --blue:#00A9F9;
     --black:#000;
     --white:#fff;
-}
-.helvetica-font{
-    font-family: helvetica;
-}
-.helveticaNue-font{
-    font-family: "helveticaNeue",sans-serif;
 }
 .default-bg{
     background:var(--blue);
@@ -49,10 +35,12 @@ src: url(../fonts/HelveticaNeue.ttf);
     margin-top: 40px;
 }
 body,html{
-    font-family:helveticaNeue ;
     letter-spacing: 0.2px;
     scroll-behavior: smooth;
-    font-weight: 600;
+    font-family: 'Lato', sans-serif;  
+}
+p,a{
+    font-weight: 300;
 }
 h2.section-title {
     text-transform: capitalize;
@@ -106,7 +94,7 @@ header{
 .header-menu ul li a,.testimonial-quote h4{
     line-height: 28px;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 1.5px;
 }
 .header-menu ul li a:hover{
@@ -390,7 +378,7 @@ ul.list::-webkit-scrollbar,.fare-list::-webkit-scrollbar {
 .earn-block a {
     text-transform: capitalize;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     border: 1px solid var(--blue);
     padding: 5px 15px;
     color: var(--blue);
@@ -416,13 +404,16 @@ ul.list::-webkit-scrollbar,.fare-list::-webkit-scrollbar {
 section.blog {
     background: transparent;
 }
+.categories {
+    flex-wrap: wrap;
+}
 .categories a {
     margin-right: 20px;
     border: 1px solid var(--blue);
     border-radius: 29px;
     padding: 5px 15px;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--blue);
     text-transform: capitalize;
     text-decoration: none;
