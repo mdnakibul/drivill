@@ -14,7 +14,7 @@
     }
 
 }
-/* Tablet Potrait View  */
+/* Tablet Portrait View  */
 @media only screen and (max-width: 768px){
     .medium-margin-bottom{
         margin-bottom: 30px;
@@ -51,7 +51,7 @@
         box-shadow: inset 0 0 0 1000px rgba(255,255,255, 0.8);
     }
 }
-/* Largr Mobile View  */
+/* Large Mobile View  */
 @media only screen and (max-width: 576px){
     .agent-feature-block{
         margin-right: 35px;
@@ -107,5 +107,10 @@
         position: relative;
         left: -15%;
         top: -50px;
+    }
+}
+@media only screen and (min-width:992px) and (max-width:1199px){
+    .header-menu ul li a{
+        font-size: 15px;
     }
 }
