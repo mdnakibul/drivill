@@ -1,4 +1,5 @@
 
+//Trigger Owl Carousel(Blog)
 $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
       loop:true,
@@ -23,7 +24,7 @@ $(document).ready(function(){
           }
       }
   });
-
+//Trigger Owl Carousel(Why choose drivill)
   $('#why-choose-carousel').owlCarousel({
     responsiveClass:true,
     item:4,
@@ -31,7 +32,7 @@ $(document).ready(function(){
     autoplayTimeout:1000,
     autoplayHoverPause:true
   });
-
+//Trigger Owl Carousel(Earn With Drivill)
   $('#earn-carousel').owlCarousel({
       responsiveClass:true,
       item:4,
@@ -76,9 +77,12 @@ $('.btn-customized').on('click', function(){
     }
  
 });
+
+
 // Single post page sidebar height fixing
 var singlePostImage = document.querySelector(".single-feature-image").clientHeight;
 var singlePostContent = document.querySelector(".single-post-content").clientHeight
 var x = document.querySelector(".signle-post-sidebar ");
 x.style.height = "500px";
 console.log(singlePostImage)
+

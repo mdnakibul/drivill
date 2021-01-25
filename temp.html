@@ -27,3 +27,50 @@
         </div>
     </li>
 </ul>
+<script>
+    //Home page service section tab styling
+
+    var bikePill = document.getElementById("service-bike-pill");
+    var bikePillImage = document.getElementById("bike-pill-image")
+    var carPill = document.getElementById("service-car-pill");
+    var carPillImage = document.getElementById("car-pill-image")
+    var deliveryPill = document.getElementById("service-delivery-pill");
+    var deliveryPillImage = document.getElementById("delivery-pill-image")
+    //For bike tab
+    if (bikePill.classList.contains('active')) {
+        bikePillImage.setAttribute("src", "./images/motorbike.svg")
+        document.querySelector('.tab-image-holder').style.backgroundColor = "#00A9F9";
+    } else {
+        bikePill.addEventListener("mouseover", function () {
+            bikePillImage.setAttribute("src", "./images/motorbike.svg");
+        })
+        bikePill.addEventListener("mouseout", function () {
+            bikePillImage.setAttribute("src", "./images/bikebw.svg");
+        })
+    }
+    // For Car Tab 
+
+    if (carPill.classList.contains('active')) {
+        carPillImage.setAttribute("src", "./images/baby-car.svg")
+        document.querySelector('.tab-image-holder').style.backgroundColor = "#00A9F9";
+    } else {
+        carPill.addEventListener("mouseover", function () {
+            carPillImage.setAttribute("src", "./images/baby-car.svg");
+        })
+        carPill.addEventListener("mouseout", function () {
+            carPillImage.setAttribute("src", "./images/carbw.svg");
+        })
+    }
+    //For Delivery Page
+    if (deliveryPill.classList.contains('active')) {
+        deliveryPillImage.setAttribute("src", "./images/fast.svg")
+        document.querySelector('.tab-image-holder').style.backgroundColor = "#00A9F9";
+    } else {
+        deliveryPill.addEventListener("mouseover", function () {
+            deliveryPillImage.setAttribute("src", "./images/fast.svg");
+        })
+        deliveryPill.addEventListener("mouseout", function () {
+            deliveryPillImage.setAttribute("src", "./images/deliverybw.svg");
+        })
+    }
+</script>

@@ -109,7 +109,7 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <div class="earning-form-tab">
                         <ul class="nav nav-pills">
                             <li class="nav-item">
@@ -177,8 +177,8 @@
                                             <input type="date" name="expiredate" id="expiredate" class="form-control form-input" value="2021-01-21">
                                         </div>
                                     </div>
-                                    <div class="form-group d-flex">
-                                        <div class="w-50 upload-box">
+                                    <div class="form-group d-flex justify-content-center small-flex-wrap">
+                                        <div class="w-50 upload-box half-width">
                                             <p class="form-group-title">Upload NID/Passport Photo <span>*</span></p>
                                             <div class="drop-upload">
                                                 <div class="drop-here d-flex flex-column align-items-center">
@@ -188,14 +188,16 @@
                                                     <button class="btn btn-primary">Browse Files</button>
                                                 </div>
                                             </div>
-                                            <div class="progress" style="height: 31px;">
-                                                <div class="progress-bar" style="width:70%"></div>
-                                                <span class="upload-percentage">70%</span>
-                                                <span class="cancel-upload"><i class="fas fa-cancel"></i></span>
+                                            <div class="progress-holder d-flex">
+                                                <div class="progress" style="height: 31px; width: 90%;">
+                                                    <div class="progress-bar" style="width:70%"></div>
+                                                    <span class="upload-percentage">70%</span>
+                                                </div>
+                                                <span class="cancel-upload"> &times;</span>
                                             </div>
                                         </div>
 
-                                        <div class="w-50 upload-box">
+                                        <div class="w-50 upload-box half-width">
                                             <p class="form-group-title">Upload Licence Photo <span>*</span></p>
                                             <div class="drop-upload">
                                                 <div class="drop-here d-flex flex-column align-items-center">
@@ -205,10 +207,12 @@
                                                     <button class="btn btn-primary">Browse Files</button>
                                                 </div>
                                             </div>
-                                            <div class="progress" style="height: 31px;">
-                                                <div class="progress-bar" style="width:70%"></div>
-                                                <span class="upload-percentage">70%</span>
-                                                <span class="cancel-upload"><i class="fas fa-cancel"></i></span>
+                                            <div class="progress-holder d-flex">
+                                                <div class="progress" style="height: 31px; width: 90%;">
+                                                    <div class="progress-bar" style="width:70%"></div>
+                                                    <span class="upload-percentage">70%</span>
+                                                </div>
+                                                <span class="cancel-upload"> &times;</span>
                                             </div>
                                         </div>
                                     </div>
@@ -337,64 +341,11 @@
                                         <button type="submit" class="btn btn-primary d-block ml-auto"> Register</button>
                                     </div>
                                 </form>
-                                <!-- <from id="vehicle-info" class="bg-white shadow">
-                                    <h2 class="form-title">Vehicle Information</h2>
-                                    <div class="form-group d-flex">
-                                        <div class="w-50 half-width">
-                                            <label for="brand" class="form-label">Brand <span class="text-danger">*</span></label>
-                                            <select name="brand" class="form-control" id="brand">
-                                                <option value="brand name" disabled selected>Brand Name</option>
-                                                <option value="honda">Honda</option>
-                                                <option value="walton">Walton</option>
-                                                <option value="tvs">TVS</option>
-                                            </select>
-                                        </div>
-                                        <div class="w-50 half-width">
-                                            <label for="model" class="form-label">Model <span class="text-danger">*</span></label>
-                                            <select name="brand" class="form-control" id="brand">
-                                                <option value="brand name" disabled selected>Model</option>
-                                                <option value="model-1">Model 1</option>
-                                                <option value="model-2">Model 2</option>
-                                                <option value="model-3">Model 3</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group d-flex">
-                                        <div class="w-50 half-width">
-                                            <label for="registration" class="form-label">Registration <span class="text-danger">*</span></label>
-                                            <select name="registration" class="form-control" id="registration">
-                                                <option value="Model" disabled selected>Registration</option>
-                                                <option value="honda">Option 1</option>
-                                                <option value="walton">Option 2</option>
-                                                <option value="tvs">Option 3</option>
-                                            </select>
-                                        </div>
-                                        <div class="w-50 half-width">
-                                            <label for="category" class="form-label">Category <span class="text-danger">*</span></label>
-                                            <select name="category" class="form-control" id="category">
-                                                <option value="category" disabled selected>Category</option>
-                                                <option value="category-1">Category 1</option>
-                                                <option value="category-2">Category 2</option>
-                                                <option value="category-3">Category 3</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group d-flex">
-                                        <div class="w-50 half-width">
-                                            <label for="vnum" class="form-label">Vehicle Number</label>
-                                            <input type="number" name="vnum" id="vnum" class="form-control form-input" placeholder="5644616463164984">
-                                        </div>
-                                        <div class="w-50 half-width">
-                                            <label for="ttn" class="form-label">Text Token Number </label>
-                                            <input type="number" name="ttn" id="ttn" class="form-control form-input" placeholder="5644616463164984">
-                                        </div>
-                                    </div>
-                                </from> -->
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 pl-5 medium-margin-top">
+                <div class="col-lg-6 pl-5 large-margin-top">
                     <h2 class="section-title">What's need to join with us</h2>
                     <p class="section-subtitle">Select option to by which you earn</p>
                     <div class="joining-block">

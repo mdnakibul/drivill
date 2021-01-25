@@ -278,19 +278,45 @@ section.feature {
 
 .scroll-pills ul li a.nav-link,.scroll-pills ul li a.active{
     margin-right: 20px;
-    border: 1px solid var(--blue);
     border-radius: 50%;
     padding: 8px 25px;
     font-size: 24px;
     font-weight: 500;
     text-align: center;
 }
-.scroll-pills ul li a.nav-link i {
-    padding-right: 10px;
+.scroll-pills ul li a.nav-link,.scroll-pills ul li a{
+    color: var(--blue);
 }
-.scroll-pills ul li a.nav-link img {
-    max-width: 55px;
-    display: block;
+.scroll-pills .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background: transparent;
+    color: #00A9F9;
+}
+@keyframes left{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+.scroll-pills ul li a.nav-link:hover .tab-image-holder {
+    background: #00A9F9;
+}
+.scroll-pills ul li a.nav-link:hover .tab-image-holder img{
+    animation: left;
+    animation-duration: 0.5s;
+}
+.tab-image-holder {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.tab-image-holder img{
+    padding:5px
+}
+.nav-pills .nav-link.active .tab-image-holder {
+    background: #00A9F9;
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
 ul.list::-webkit-scrollbar,.fare-list::-webkit-scrollbar {
@@ -339,6 +365,7 @@ ul.list::-webkit-scrollbar,.fare-list::-webkit-scrollbar {
 .bike-tab-right {
     max-width: 60%;
     margin: 0 auto;
+    padding-top: 15px;
 }
 .bike-tab-right h3 {
     font-size: 44px;
@@ -1231,10 +1258,12 @@ p.form-group-title {
 }
 .upload-box {
     background: #F5F6FA;
-    margin-right: 20px;
     border-radius: 6px;
     box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
     padding: 20px 5px;
+}
+.upload-box:first-child{
+    margin-right: 20px;
 }
 .drop-here {
     padding: 5px;
@@ -1255,6 +1284,15 @@ form#tab-car select{
     width: 100%;
     padding: 4px 0px;
 }
+span.cancel-upload {
+    background: #00AAF9;
+    color: #fff;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    padding-left: 9px;
+    margin-left: 5px;
+}
 /* Career Page Styling  */
 
 header.career-header{
@@ -1268,6 +1306,14 @@ section.why-join .why-choose-block img{
     box-shadow:0px 3px 6px rgba(0,0,0,0.16);
     border-radius:8px;
     border:none;
+}
+.employee-table-container {
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+}
+.employee-quote-table{
+    min-width:510px;
 }
 .employee-quote-table tbody tr:nth-of-type(even){
     background-color: #F6F9FC;
@@ -1310,7 +1356,9 @@ section.why-join .why-choose-block img{
 .bike-banner-1{
     background-image: url(../../images/bike-1-header.png)!important;
 }
-
+span.upload-percentage {
+    padding-top: 15px;
+}
 /*==================================================================
  Tracker Page Styling  
  ===================================================================*/
