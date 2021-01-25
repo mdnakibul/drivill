@@ -351,6 +351,7 @@ ul.list::-webkit-scrollbar,.fare-list::-webkit-scrollbar {
     list-style: none;
     display: inline-block;
     border-right: 2px solid #707070;
+    margin-bottom: 10px;
 }
 
 .bike-tab-right ul li:last-child {
@@ -759,7 +760,7 @@ Styling Contact Us Page
 
 .support-type ul li a {
     font-size: 20px;
-    color: var(var(--white));
+    color: var(--white);
     background: var(--blue);
     padding: 20px;
     border-radius: 50%;
@@ -807,6 +808,7 @@ h3.address-title {
 .map,.map iframe{
     height: 100%;
     width: 100%;
+    min-height: 300px;
 }
 .contact-form{
     background-color: var(--white);
