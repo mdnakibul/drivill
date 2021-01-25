@@ -261,6 +261,9 @@ section.feature {
   .scroller-left {
     float:left;
   }
+  .scroller-left, .scroller-right{
+      display: none;
+  }
   .scroll-pills {
     overflow: hidden;
 }
@@ -276,14 +279,18 @@ section.feature {
 .scroll-pills ul li a.nav-link,.scroll-pills ul li a.active{
     margin-right: 20px;
     border: 1px solid var(--blue);
-    border-radius: 29px;
-    padding: 8px 20px;
-    display: flex;
+    border-radius: 50%;
+    padding: 8px 25px;
     font-size: 24px;
     font-weight: 500;
+    text-align: center;
 }
 .scroll-pills ul li a.nav-link i {
     padding-right: 10px;
+}
+.scroll-pills ul li a.nav-link img {
+    max-width: 55px;
+    display: block;
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
 ul.list::-webkit-scrollbar,.fare-list::-webkit-scrollbar {
@@ -363,7 +370,6 @@ ul.list::-webkit-scrollbar,.fare-list::-webkit-scrollbar {
 =======================================
 */
 .earn-block{
-    margin-bottom: 20px;
     text-align: center;
     padding-bottom: 20px;
     box-shadow: 0px 3px 25px rgba(0,0,0,0.16);
@@ -717,6 +723,9 @@ img.blank-phone {
 }
 .owl-carousel .owl-prev:hover,.owl-carousel .owl-next:hover{
     opacity: 1;
+}
+#earn-carousel .owl-next, #earn-carousel .owl-prev {
+    top: 30%;
 }
 .owl-item.active {
     padding-bottom: 30px;

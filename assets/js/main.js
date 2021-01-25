@@ -15,9 +15,12 @@ $(document).ready(function(){
   
           },
           768:{
-              items:3,
+              items:2,
   
           },
+          992:{
+              item:3
+          }
       }
   });
 
