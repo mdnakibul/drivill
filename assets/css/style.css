@@ -181,7 +181,7 @@ section.feature {
     width: 90%;
     float: left;
 }
-.feature-description h3,.tab-forms>ul li a,.employee-quote-table h3 {
+.feature-description h3,.tab-forms>ul li a,.employee-quote-table h3, .agent-merchant-form>ul li a {
     font-size: 24px;
     text-transform: capitalize;
     letter-spacing: 2px;
@@ -1013,22 +1013,28 @@ Delivery Page Styles
 .delivery-header{
     background-image: url(../../images/deliver-header.png);
 }
+.agent-merchant-form {
+    box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
+}
+.agent-merchant-form>ul.nav-pills .nav-link{
+    border: 1px solid var(--blue);
+}
 .tab-forms {
     background: var(--white);
     padding: 0px 0px 20px 0px;
     box-shadow: 0px 3px 20px rgba(0,0,0,0.16);
 }
 
-.tab-forms .nav-pills .nav-link {
+.tab-forms .nav-pills .nav-link, .agent-merchant-form .nav-pills .nav-link {
     border-radius: 0px;
 }
-.tab-forms .nav-pills .nav-link.active {
+.tab-forms .nav-pills .nav-link.active,.agent-merchant-form .nav-pills .nav-link.active {
     background: var(--blue);
 }
 .tab-forms form {
     margin-top: 30px;
 }
-.tab-forms>ul li {
+.tab-forms>ul li, .agent-merchant-form>ul li {
     width: 50%;
     text-align: center;
 }

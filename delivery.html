@@ -40,19 +40,22 @@
                             <a href="./index.html" class="nav-link default-color text-uppercase"> Home </a>
                         </li>
                         <li class="nav-item">
-                            <a href="./earn-with-bike.html" class="nav-link default-color text-uppercase"> Earn with us </a>
+                            <a href="./earn-with-bike.html" class="nav-link default-color text-uppercase"> Earn with us
+                            </a>
                         </li>
                         <li class="nav-item">
                             <a href="./delivery.html" class="nav-link default-color text-uppercase">D Delivery </a>
                         </li>
                         <li class="nav-item">
-                            <a href="./location-tracking.html" class="nav-link default-color text-uppercase"> Track Package</a>
+                            <a href="./location-tracking.html" class="nav-link default-color text-uppercase"> Track
+                                Package</a>
                         </li>
                         <li class="nav-item">
                             <a href="./contact.html" class="nav-link default-color text-uppercase"> Contact Us </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link default-color text-uppercase dropdown-toggle"  data-toggle="dropdown" data-hover="dropdown"> More </a>
+                            <a href="#" class="nav-link default-color text-uppercase dropdown-toggle"
+                                data-toggle="dropdown" data-hover="dropdown"> More </a>
                             <div class="dropdown-menu fadeAnimation black-bg" aria-labelledby="navbar-drop">
                                 <a href="./about.html" class="dropdown-item default-color">About Us</a>
                                 <a href="./blog-home.html" class="dropdown-item default-color">Blog</a>
@@ -84,101 +87,286 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
-                    <div class="tab-forms">
+                    <div class="agent-merchant-form">
                         <ul class="nav nav-pills">
                             <li class="nav-item">
-                                <a class="nav-link active" data-toggle="pill" href="#login">Login </a>
+                                <a class="nav-link active" data-toggle="pill" href="#agent" role="tab"
+                                    aria-controls="pills-agent" aria-selected="true">Agent</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="pill" href="#register">Register</a>
+                                <a class="nav-link" data-toggle="pill" href="#merchant" role="tab"
+                                    aria-controls="pills-merchant" aria-selected="false">Merchant</a>
                             </li>
                         </ul>
-
-                        <!-- Tab panes -->
-                        <div class="tab-content">
-                            <div class="tab-pane container active" id="login">
-                                <form id="tab-login">
-                                    <div class="form-group">
-                                        <label for="loginid" class="form-label">Login ID</label>
-                                        <input type="text" id="loginid" class="form-control form-input" placeholder="Enter Your Full Name">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="loginid" class="form-label">Password</label>
-                                        <input type="text" id="loginid" class="form-control form-input" placeholder="Enter Your Password">
-                                    </div>
-                                    <div class="form-group d-flex justify-content-center">
-                                        <button type="submit">Login</button>
-                                        <li class="nav-item register-pill">
+                        <!-- Tab Content  -->
+                        <div class="tab-content mt-3">
+                            <div class="tab-pane fade show active" id="agent" role="tabpanel"
+                                aria-labelledby="agent-tab">
+                                <!-- Agent Start  -->
+                                <div class="tab-forms">
+                                    <ul class="nav nav-pills">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-toggle="pill" href="#login">Login </a>
+                                        </li>
+                                        <li class="nav-item">
                                             <a class="nav-link" data-toggle="pill" href="#register">Register</a>
                                         </li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div class="tab-pane container active" id="login">
+                                            <form id="tab-login">
+                                                <div class="form-group">
+                                                    <label for="loginid" class="form-label">Login ID</label>
+                                                    <input type="text" id="loginid" class="form-control form-input"
+                                                        placeholder="Enter Your Full Name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="loginid" class="form-label">Password</label>
+                                                    <input type="text" id="loginid" class="form-control form-input"
+                                                        placeholder="Enter Your Password">
+                                                </div>
+                                                <div class="form-group d-flex justify-content-center">
+                                                    <button type="submit">Login</button>
+                                                    <li class="nav-item register-pill">
+                                                        <a class="nav-link" data-toggle="pill"
+                                                            href="#register">Register</a>
+                                                    </li>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane container fade" id="register">
+                                            <form id="tab-register">
+                                                <div class="form-group">
+                                                    <label for="name" class="form-label">Full Name <span
+                                                            class="text-danger">*</span></label>
+                                                    <input type="text" id="name" name="neme"
+                                                        class="form-control form-input"
+                                                        placeholder="Enter Your Full Name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="name" class="form-label">Home Address
+                                                    </label>
+                                                    <input type="text" id="name" name="neme"
+                                                        class="form-control form-input"
+                                                        placeholder="Enter Your address(present)">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="name" class="form-label">Business Name
+                                                    </label>
+                                                    <input type="text" id="name" name="neme"
+                                                        class="form-control form-input"
+                                                        placeholder="Enter Your business name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="name" class="form-label">Business Address
+                                                    </label>
+                                                    <input type="text" id="name" name="neme"
+                                                        class="form-control form-input"
+                                                        placeholder="Enter Your business address">
+                                                </div>
+                                                <div class="form-group d-flex">
+                                                    <div class="w-50 half-width">
+                                                        <label for="nid" class="input-label">NID <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="text" name="nid" id="nid"
+                                                            class="form-control form-input"
+                                                            placeholder="17 digit NID number">
+                                                    </div>
+                                                    <div class="w-50 half-width">
+                                                        <label for="nid" class="input-label">Trade Licence
+                                                            <span class="text-danger">*</span></label>
+                                                        <input type="text" name="trade" id="trade"
+                                                            class="form-control form-input"
+                                                            placeholder="Trade Licence No">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group d-flex">
+                                                    <div class="w-50 half-width">
+                                                        <label for="product-type" class="form-label">Type of
+                                                            Product</label>
+                                                        <select name="product type" class="form-control"
+                                                            id="product-type">
+                                                            <option value="business type" disabled selected>
+                                                                Business
+                                                                Type</option>
+                                                            <option value="food">Food</option>
+                                                            <option value="grocery">Grocery</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="w-50 half-width">
+                                                        <label for="fb-url" class="form-label">Facebook Page
+                                                            URL</label>
+                                                        <input type="url" name="fb-url" id="fb-url"
+                                                            class="form-control form-input"
+                                                            placeholder="Facebook Page URL">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group d-flex">
+                                                    <div class="w-50 half-width">
+                                                        <label for="mobile" class="form-label">Mobile <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="tel" name="mobile" id="mobile"
+                                                            class="form-control form-input"
+                                                            placeholder="11 digit mobile NO">
+                                                    </div>
+                                                    <div class="w-50 half-width">
+                                                        <label for="mobile" class="form-label">Business
+                                                            Mobile <span class="text-danger">*</span></label>
+                                                        <input type="tel" name="mobile" id="mobile"
+                                                            class="form-control form-input"
+                                                            placeholder="11 digit mobile NO">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="tos">
+                                                        <input type="checkbox" name="tos" id="tos" checked>
+                                                        I agreed to Drivill's <a href="#">Terms of use</a>
+                                                        and <a href="#">Privacy policy</a>
+                                                    </label>
+                                                </div>
+                                                <div class="form-group d-flex justify-content-center">
+                                                    <button type="submit">Register</button>
+                                                    <li class="nav-item login-pill">
+                                                        <a class="nav-link" data-toggle="pill" href="#login">Login</a>
+                                                    </li>
+                                                </div>
+                                            </form>
+                                        </div>
                                     </div>
-                                </form>
+                                </div>
                             </div>
-                            <div class="tab-pane container fade" id="register">
-                                <form id="tab-register">
-                                    <div class="form-group">
-                                        <label for="name" class="form-label">Full Name <span class="text-danger">*</span></label>
-                                        <input type="text" id="name" name="neme" class="form-control form-input" placeholder="Enter Your Full Name">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="name" class="form-label">Home Address </label>
-                                        <input type="text" id="name" name="neme" class="form-control form-input" placeholder="Enter Your address(present)">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="name" class="form-label">Business Name </label>
-                                        <input type="text" id="name" name="neme" class="form-control form-input" placeholder="Enter Your business name">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="name" class="form-label">Business Address </label>
-                                        <input type="text" id="name" name="neme" class="form-control form-input" placeholder="Enter Your business address">
-                                    </div>
-                                    <div class="form-group d-flex">
-                                        <div class="w-50 half-width">
-                                            <label for="nid" class="input-label">NID <span class="text-danger">*</span></label>
-                                            <input type="text" name="nid" id="nid" class="form-control form-input" placeholder="17 digit NID number">
-                                        </div>
-                                        <div class="w-50 half-width">
-                                            <label for="nid" class="input-label">Trade Licence <span class="text-danger">*</span></label>
-                                            <input type="text" name="trade" id="trade" class="form-control form-input" placeholder="Trade Licence No">
-                                        </div>
-                                    </div>
-                                    <div class="form-group d-flex">
-                                        <div class="w-50 half-width">
-                                            <label for="product-type" class="form-label">Type of Product</label>
-                                            <select name="product type" class="form-control" id="product-type">
-                                                <option value="business type" disabled selected>Business Type</option>
-                                                <option value="food">Food</option>
-                                                <option value="grocery">Grocery</option>
-                                            </select>
-                                        </div>
-                                        <div class="w-50 half-width">
-                                            <label for="fb-url" class="form-label">Facebook Page URL</label>
-                                            <input type="url" name="fb-url" id="fb-url" class="form-control form-input" placeholder="Facebook Page URL">
-                                        </div>
-                                    </div>
-                                    <div class="form-group d-flex">
-                                        <div class="w-50 half-width">
-                                            <label for="mobile" class="form-label">Mobile <span class="text-danger">*</span></label>
-                                            <input type="tel" name="mobile" id="mobile" class="form-control form-input" placeholder="11 digit mobile NO">
-                                        </div>
-                                        <div class="w-50 half-width">
-                                            <label for="mobile" class="form-label">Business Mobile <span class="text-danger">*</span></label>
-                                            <input type="tel" name="mobile" id="mobile" class="form-control form-input" placeholder="11 digit mobile NO">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="tos">
-                                            <input type="checkbox" name="tos" id="tos" checked>
-                                            I agreed to Drivill's <a href="#">Terms of use</a> and <a href="#">Privacy policy</a>
-                                        </label>
-                                    </div>
-                                    <div class="form-group d-flex justify-content-center">
-                                        <button type="submit">Register</button>
-                                        <li class="nav-item login-pill">
-                                            <a class="nav-link" data-toggle="pill" href="#login">Login</a>
+                            <div class="tab-pane fade" id="merchant" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="tab-forms" id="merchant-form">
+                                    <ul class="nav nav-pills">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-toggle="pill" href="#merchant-login">Login
+                                            </a>
                                         </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="pill"
+                                                href="#merchant-register">Register</a>
+                                        </li>
+                                    </ul>
+
+                                    <div class="tab-content">
+                                        <div class="tab-pane container active" id="merchant-login">
+                                            <form id="tab-login">
+                                                <div class="form-group">
+                                                    <label for="loginid" class="form-label">Login ID</label>
+                                                    <input type="text" id="loginid" class="form-control form-input"
+                                                        placeholder="Enter Your Full Name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="loginid" class="form-label">Password</label>
+                                                    <input type="text" id="loginid" class="form-control form-input"
+                                                        placeholder="Enter Your Password">
+                                                </div>
+                                                <div class="form-group d-flex justify-content-center">
+                                                    <button type="submit">Login</button>
+                                                    <li class="nav-item register-pill">
+                                                        <a class="nav-link" data-toggle="pill"
+                                                            href="#register">Register</a>
+                                                    </li>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane container" id="merchant-register">
+                                            <form id="tab-register">
+                                                <div class="form-group">
+                                                    <label for="name" class="form-label">Full Name <span
+                                                            class="text-danger">*</span></label>
+                                                    <input type="text" id="name" name="neme"
+                                                        class="form-control form-input"
+                                                        placeholder="Enter Your Full Name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="name" class="form-label">Home Address </label>
+                                                    <input type="text" id="name" name="neme"
+                                                        class="form-control form-input"
+                                                        placeholder="Enter Your address(present)">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="name" class="form-label">Business Name </label>
+                                                    <input type="text" id="name" name="neme"
+                                                        class="form-control form-input"
+                                                        placeholder="Enter Your business name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="name" class="form-label">Business Address </label>
+                                                    <input type="text" id="name" name="neme"
+                                                        class="form-control form-input"
+                                                        placeholder="Enter Your business address">
+                                                </div>
+                                                <div class="form-group d-flex">
+                                                    <div class="w-50 half-width">
+                                                        <label for="nid" class="input-label">NID <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="text" name="nid" id="nid"
+                                                            class="form-control form-input"
+                                                            placeholder="17 digit NID number">
+                                                    </div>
+                                                    <div class="w-50 half-width">
+                                                        <label for="nid" class="input-label">Trade Licence <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="text" name="trade" id="trade"
+                                                            class="form-control form-input"
+                                                            placeholder="Trade Licence No">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group d-flex">
+                                                    <div class="w-50 half-width">
+                                                        <label for="product-type" class="form-label">Type of
+                                                            Product</label>
+                                                        <select name="product type" class="form-control"
+                                                            id="product-type">
+                                                            <option value="business type" disabled selected>Business
+                                                                Type</option>
+                                                            <option value="food">Food</option>
+                                                            <option value="grocery">Grocery</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="w-50 half-width">
+                                                        <label for="fb-url" class="form-label">Facebook Page URL</label>
+                                                        <input type="url" name="fb-url" id="fb-url"
+                                                            class="form-control form-input"
+                                                            placeholder="Facebook Page URL">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group d-flex">
+                                                    <div class="w-50 half-width">
+                                                        <label for="mobile" class="form-label">Mobile <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="tel" name="mobile" id="mobile"
+                                                            class="form-control form-input"
+                                                            placeholder="11 digit mobile NO">
+                                                    </div>
+                                                    <div class="w-50 half-width">
+                                                        <label for="mobile" class="form-label">Business Mobile <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="tel" name="mobile" id="mobile"
+                                                            class="form-control form-input"
+                                                            placeholder="11 digit mobile NO">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="tos">
+                                                        <input type="checkbox" name="tos" id="tos" checked>
+                                                        I agreed to Drivill's <a href="#">Terms of use</a> and <a
+                                                            href="#">Privacy policy</a>
+                                                    </label>
+                                                </div>
+                                                <div class="form-group d-flex justify-content-center">
+                                                    <button type="submit">Register</button>
+                                                    <li class="nav-item login-pill">
+                                                        <a class="nav-link" data-toggle="pill" href="#login">Login</a>
+                                                    </li>
+                                                </div>
+                                            </form>
+                                        </div>
                                     </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -349,7 +537,7 @@
                                 </table>
                             </div>
                         </div>
-                    </div> 
+                    </div>
                     <div class="terms">
                         <ul>
                             <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, ut!</li>
@@ -474,7 +662,7 @@
     </section>
 
     <!-- Jouning Requirement End  -->
-    
+
     <!-- Album Section Start  -->
 
     <section class="section-padding section-bg">
@@ -492,35 +680,38 @@
                 <div class="col-md-4">
                     <div class="gallery-item">
                         <img class="w-100" src="./images/img-gallery-1.png" data-target="#carouselExample"
-                        data-slide-to="0">
+                            data-slide-to="0">
                     </div>
-                    
+
                 </div>
                 <div class="col-md-4 upper-overlapping">
-                    <div class="gallery-item" >
-                        <video src="./videos/header.mp4" data-target="#carouselExample" data-slide-to="1" controls></video>
+                    <div class="gallery-item">
+                        <video src="./videos/header.mp4" data-target="#carouselExample" data-slide-to="1"
+                            controls></video>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="gallery-item">
                         <img class="w-100" src="./images/img-gallery-2.png" data-target="#carouselExample"
-                        data-slide-to="2">
+                            data-slide-to="2">
                     </div>
                 </div>
                 <div class="col-md-4 up-right-overlapping">
                     <div class="gallery-item">
-                        <video src="./videos/header.mp4" data-target="#carouselExample" data-slide-to="3" controls></video>
-                    </div> 
+                        <video src="./videos/header.mp4" data-target="#carouselExample" data-slide-to="3"
+                            controls></video>
+                    </div>
                 </div>
                 <div class="col-md-4 upper-overlapping">
                     <div class="gallery-item">
                         <img class="w-100" src="./images/img-gallery-3.png" data-target="#carouselExample"
-                        data-slide-to="4">
-                    </div> 
+                            data-slide-to="4">
+                    </div>
                 </div>
                 <div class="col-md-4 left-top-overlapping">
                     <div class="gallery-item">
-                        <video src="./videos/header.mp4" data-target="#carouselExample" data-slide-to="5" controls></video>
+                        <video src="./videos/header.mp4" data-target="#carouselExample" data-slide-to="5"
+                            controls></video>
                     </div>
                 </div>
             </div>
@@ -639,75 +830,85 @@
                         <div class="card single-question">
                             <div class="card-header">
                                 <h3>
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#q1"
-                                        aria-expanded="true" aria-controls="q1">Your Question<span
-                                            class="fas fa-angle-right" id="collapse-icon"></span></a>
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#q1" aria-expanded="true"
+                                        aria-controls="q1">Your Question<span class="fas fa-angle-right"
+                                            id="collapse-icon"></span></a>
                                 </h3>
                             </div>
 
                             <div id="q1" class="collapse">
                                 <p class="answer">
-                                    Tincidunt ornare massa eget egestas purus viverra accumsan in nisl. Tempor id eu nisl nunc mi ipsum faucibus. Fusce id velit ut tortor pretium. Massa ultricies mi quis hendrerit dolor magna eget.
+                                    Tincidunt ornare massa eget egestas purus viverra accumsan in nisl. Tempor id eu
+                                    nisl nunc mi ipsum faucibus. Fusce id velit ut tortor pretium. Massa ultricies mi
+                                    quis hendrerit dolor magna eget.
                                 </p>
                             </div>
                         </div>
                         <div class="card single-question">
                             <div class="card-header">
                                 <h3>
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#q2"
-                                        aria-expanded="true" aria-controls="collapseOne">Your Question<span
-                                            class="fas fa-angle-right" id="collapse-icon"></span></a>
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#q2" aria-expanded="true"
+                                        aria-controls="collapseOne">Your Question<span class="fas fa-angle-right"
+                                            id="collapse-icon"></span></a>
                                 </h3>
                             </div>
 
                             <div id="q2" class="collapse">
                                 <p class="answer">
-                                    Tincidunt ornare massa eget egestas purus viverra accumsan in nisl. Tempor id eu nisl nunc mi ipsum faucibus. Fusce id velit ut tortor pretium. Massa ultricies mi quis hendrerit dolor magna eget.
+                                    Tincidunt ornare massa eget egestas purus viverra accumsan in nisl. Tempor id eu
+                                    nisl nunc mi ipsum faucibus. Fusce id velit ut tortor pretium. Massa ultricies mi
+                                    quis hendrerit dolor magna eget.
                                 </p>
                             </div>
                         </div>
                         <div class="card single-question">
                             <div class="card-header">
                                 <h3>
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#q3"
-                                        aria-expanded="true" aria-controls="collapseOne">Your Question<span
-                                            class="fas fa-angle-right" id="collapse-icon"></span></a>
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#q3" aria-expanded="true"
+                                        aria-controls="collapseOne">Your Question<span class="fas fa-angle-right"
+                                            id="collapse-icon"></span></a>
                                 </h3>
                             </div>
 
                             <div id="q3" class="collapse">
                                 <p class="answer">
-                                    Tincidunt ornare massa eget egestas purus viverra accumsan in nisl. Tempor id eu nisl nunc mi ipsum faucibus. Fusce id velit ut tortor pretium. Massa ultricies mi quis hendrerit dolor magna eget.
+                                    Tincidunt ornare massa eget egestas purus viverra accumsan in nisl. Tempor id eu
+                                    nisl nunc mi ipsum faucibus. Fusce id velit ut tortor pretium. Massa ultricies mi
+                                    quis hendrerit dolor magna eget.
                                 </p>
                             </div>
                         </div>
                         <div class="card single-question">
                             <div class="card-header">
                                 <h3>
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#q4"
-                                        aria-expanded="true" aria-controls="collapseOne">Your Question<span
-                                            class="fas fa-angle-right" id="collapse-icon"></span></a>
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#q4" aria-expanded="true"
+                                        aria-controls="collapseOne">Your Question<span class="fas fa-angle-right"
+                                            id="collapse-icon"></span></a>
                                 </h3>
                             </div>
 
                             <div id="q4" class="collapse">
                                 <p class="answer">
-                                    Tincidunt ornare massa eget egestas purus viverra accumsan in nisl. Tempor id eu nisl nunc mi ipsum faucibus. Fusce id velit ut tortor pretium. Massa ultricies mi quis hendrerit dolor magna eget.
+                                    Tincidunt ornare massa eget egestas purus viverra accumsan in nisl. Tempor id eu
+                                    nisl nunc mi ipsum faucibus. Fusce id velit ut tortor pretium. Massa ultricies mi
+                                    quis hendrerit dolor magna eget.
                                 </p>
                             </div>
                         </div>
                         <div class="card single-question">
                             <div class="card-header">
                                 <h3>
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#q5"
-                                        aria-expanded="true" aria-controls="collapseOne">Your Question<span
-                                            class="fas fa-angle-right" id="collapse-icon"></span></a>
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#q5" aria-expanded="true"
+                                        aria-controls="collapseOne">Your Question<span class="fas fa-angle-right"
+                                            id="collapse-icon"></span></a>
                                 </h3>
                             </div>
 
                             <div id="q5" class="collapse">
                                 <p class="answer">
-                                    Tincidunt ornare massa eget egestas purus viverra accumsan in nisl. Tempor id eu nisl nunc mi ipsum faucibus. Fusce id velit ut tortor pretium. Massa ultricies mi quis hendrerit dolor magna eget.
+                                    Tincidunt ornare massa eget egestas purus viverra accumsan in nisl. Tempor id eu
+                                    nisl nunc mi ipsum faucibus. Fusce id velit ut tortor pretium. Massa ultricies mi
+                                    quis hendrerit dolor magna eget.
                                 </p>
                             </div>
                         </div>
@@ -717,7 +918,7 @@
         </div>
     </section>
     <!-- FAQ End  -->
-    
+
     <!-- Footer Star  -->
     <section class="section-padding bg-dark footer">
         <div class="container">
@@ -726,7 +927,9 @@
                     <div class="footer-1">
                         <img src="./images/LOGO (1).png" alt="" class="logo">
                         <p>
-                            Drivill is A New Generation Transportation Network Company. Lowest fare & Fastest Reliable Five Star Service Our First Priority.We started our business from New YorkUSA in 2019. Now we moving forward to Bangladesh, Nepal, India, UAE & Mexico.
+                            Drivill is A New Generation Transportation Network Company. Lowest fare & Fastest Reliable
+                            Five Star Service Our First Priority.We started our business from New YorkUSA in 2019. Now
+                            we moving forward to Bangladesh, Nepal, India, UAE & Mexico.
                         </p>
                         <ul>
                             <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
@@ -767,16 +970,16 @@
                 <div class="col-md-3">
                     <div class="footer-4">
                         <h3 class="footer-title">newsletter</h3>
-                    <form id="footer-newsletter">
-                        <input type="email">
-                        <i class="fas fa-envelope"></i>
-                    </form>
-                    <address>
-                        DRiViLL, Bangladesh, Gulshan, <br>
-                        Shahjadpur, Confidence Tower-02, <br>
-                        Flat-9/A 1212 Dhaka, <br>
-                        Dhaka Division,Bangladesh <br>
-                    </address>
+                        <form id="footer-newsletter">
+                            <input type="email">
+                            <i class="fas fa-envelope"></i>
+                        </form>
+                        <address>
+                            DRiViLL, Bangladesh, Gulshan, <br>
+                            Shahjadpur, Confidence Tower-02, <br>
+                            Flat-9/A 1212 Dhaka, <br>
+                            Dhaka Division,Bangladesh <br>
+                        </address>
                     </div>
                 </div>
             </div>
